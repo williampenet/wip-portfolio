@@ -1,0 +1,5 @@
+.DS_Store
+*.bak
+.impeccable/hook.cache.json
+.impeccable/screenshot-*.png
+__pycache__/

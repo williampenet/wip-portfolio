@@ -1,0 +1,27 @@
+name: Build check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build
+        run: python3 build.py
+      - name: Generated pages are up to date
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::Generated pages differ from a fresh build. Run python3 build.py and commit the result."
+            git diff --stat
+            exit 1
+          fi

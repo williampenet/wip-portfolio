@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-12T00:00:00Z",
+  "title": "Design System: WiP Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Studio Plum",
+        "canonical": "#4A2244",
+        "tonalRamp": ["#120610", "#1E0B1C", "#2E1428", "#3B1A36", "#4A2244", "#6B3862", "#9E6C94", "#D9BFD2"]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Darker Plum (hover)",
+        "canonical": "#3B1A36",
+        "tonalRamp": ["#120610", "#1E0B1C", "#2E1428", "#3B1A36", "#4A2244", "#6B3862", "#9E6C94", "#D9BFD2"]
+      },
+      "accent-pressed": {
+        "role": "primary",
+        "displayName": "Pressed Plum (active)",
+        "canonical": "#2E1428",
+        "tonalRamp": ["#120610", "#1E0B1C", "#2E1428", "#3B1A36", "#4A2244", "#6B3862", "#9E6C94", "#D9BFD2"]
+      },
+      "accent-tint-onink": {
+        "role": "primary",
+        "displayName": "Pink Tint (on-ink hover)",
+        "canonical": "#EBD9E4",
+        "tonalRamp": ["#2E1428", "#4A2244", "#6B3862", "#8E5985", "#B080A8", "#D1A7C8", "#EBD9E4", "#F7ECF3"]
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Draft Paper",
+        "canonical": "#F8F6F3",
+        "tonalRamp": ["#1C1A17", "#3A3630", "#5A5449", "#7B7465", "#9D9686", "#C3BCAB", "#E6DFCF", "#F8F6F3"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Clean Surface",
+        "canonical": "#FFFFFF",
+        "tonalRamp": ["#111111", "#2C2C2C", "#4A4A4A", "#6E6E6E", "#949494", "#BBBBBB", "#E0E0E0", "#FFFFFF"]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Deeper Paper",
+        "canonical": "#EFEBE6",
+        "tonalRamp": ["#1A1816", "#36322C", "#564F46", "#766D62", "#9B9284", "#C2BAAC", "#DED7CC", "#EFEBE6"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Deep Ink",
+        "canonical": "#14121A",
+        "tonalRamp": ["#09080D", "#14121A", "#26222F", "#3A3545", "#55505F", "#7A7584", "#B4AFBB", "#E6E3EB"]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "canonical": "#4A4552",
+        "tonalRamp": ["#120F17", "#1F1C27", "#302C3B", "#4A4552", "#6B6472", "#938D99", "#BFBBC4", "#E8E5EB"]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#6B6472",
+        "tonalRamp": ["#171420", "#271F2F", "#3D3545", "#564F62", "#6B6472", "#938D99", "#BFBBC4", "#E8E5EB"]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#E4E0DB",
+        "tonalRamp": ["#1A1815", "#363330", "#56514A", "#766F65", "#9A9284", "#C0B9AB", "#E4E0DB", "#F6F4F1"]
+      },
+      "hairline-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "#D8D2CB",
+        "tonalRamp": ["#1A1813", "#36322C", "#564F46", "#766D62", "#9B9284", "#C2BAAC", "#D8D2CB", "#F0ECE7"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero headline only. 68px desktop / 52px tablet / 40px mobile. Always `text-wrap: balance`." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles — Selected work, How I think about it, Toolbox, About, Contact. 36px desktop / 30px mobile." },
+      "title": { "displayName": "Title", "purpose": "Project names, about heading, contact heading. 26px desktop / 22px mobile." },
+      "lead": { "displayName": "Lead", "purpose": "The one-sentence positioning paragraph under the hero. 19px desktop / 17px mobile." },
+      "body": { "displayName": "Body", "purpose": "Running paragraphs. 17px / 1.6 at 65–75ch. 16px on mobile." },
+      "button": { "displayName": "Button", "purpose": "Button and nav link labels. 15px / 600 / -0.005em." },
+      "meta": { "displayName": "Meta", "purpose": "Project right-align meta, metadata values, footer copyright. 14px / 500, muted color." },
+      "label": { "displayName": "Label", "purpose": "Small-caps section eyebrows, metalist dt, footer column headings. 12px / 600 / 0.08em UPPERCASE, muted color." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(.22,.61,.25,1)", "purpose": "Default easing for every reveal and transform. Exponential-feeling ease-out that settles cleanly." },
+      { "name": "hover-color", "value": "0.16s linear", "purpose": "Color-only hover feedback on buttons, links, and nav items. Linear because color interpolation is already smooth." },
+      { "name": "reveal-body", "value": "0.58s ease-standard", "purpose": "Fade and 16px rise on body elements as they enter the viewport. Observed once per element; never resets on scroll-out." },
+      { "name": "reveal-small", "value": "0.5s ease-standard", "purpose": "Fade and 12px rise on smaller elements (list items, meta lines) with a tighter translate." },
+      { "name": "reveal-rule", "value": "0.6s ease-standard", "purpose": "The hairline rule beneath section headings scales from 0 → full width horizontally, origin left." },
+      { "name": "reveal-media", "value": "0.66s ease-standard", "purpose": "The image inside a notched media frame scales from 1.04 → 1. The frame geometry stays fixed; only the image settles." },
+      { "name": "stagger-cap", "value": "240ms", "purpose": "Maximum total stagger within any single reveal group. Longer staggers read as scripted." },
+      { "name": "failsafe", "value": "2500ms", "purpose": "If IntersectionObserver never fires, every revealable element becomes visible unconditionally." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "980px", "purpose": "Hero collapses to single column; project collapses; about collapses; tools drops to 2-col; display drops to 52px." },
+      { "name": "mobile", "value": "680px", "purpose": "All grids collapse to 1-col; display drops to 40px; body drops to 16px; contact padding tightens to 56×28." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one authored moment of color on a band. Appears only where a decision has been made.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">See the work</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 8px; background: #4A2244; color: #FFFFFF; font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: -0.005em; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: background-color 0.16s linear; } .ds-btn-primary:hover { background: #3B1A36; } .ds-btn-primary:active { background: #2E1428; } .ds-btn-primary:focus-visible { outline: 2px solid #4A2244; outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The quiet secondary. Deep Ink border inverts fully on hover; no intermediate state.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\">Get in touch</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 8px; background: transparent; color: #14121A; font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: -0.005em; text-decoration: none; border: 1px solid #14121A; cursor: pointer; transition: background-color 0.16s linear, color 0.16s linear; } .ds-btn-ghost:hover { background: #14121A; color: #FFFFFF; } .ds-btn-ghost:focus-visible { outline: 2px solid #4A2244; outline-offset: 2px; }"
+    },
+    {
+      "name": "On-Ink Button",
+      "kind": "button",
+      "refersTo": "button-onink",
+      "description": "Used only inside the Deep Ink contact panel. Pink-tint hover is the one place the plum accent arrives on dark.",
+      "html": "<div class=\"ds-onink-stage\"><a class=\"ds-btn-onink\" href=\"#\">william.penet@gmail.com</a></div>",
+      "css": ".ds-onink-stage { background: #14121A; border-radius: 16px; padding: 36px 32px; display: inline-flex; } .ds-btn-onink { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 8px; background: #FFFFFF; color: #14121A; font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: -0.005em; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: background-color 0.16s linear; } .ds-btn-onink:hover { background: #EBD9E4; } .ds-btn-onink:focus-visible { outline: 2px solid #4A2244; outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "tlink",
+      "description": "In-copy link. 1px hairline-strong underline that shifts to accent with the text on hover. Border-based so the offset stays stable across weights.",
+      "html": "<p class=\"ds-link-stage\">The whole page is one <a class=\"ds-tlink\" href=\"#\">working document</a> about product-building.</p>",
+      "css": ".ds-link-stage { font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.6; color: #4A4552; max-width: 60ch; } .ds-tlink { color: #14121A; text-decoration: none; font-weight: 500; border-bottom: 1px solid #D8D2CB; transition: color 0.16s linear, border-color 0.16s linear; } .ds-tlink:hover { color: #4A2244; border-color: #4A2244; } .ds-tlink:focus-visible { outline: 2px solid #4A2244; outline-offset: 2px; border-radius: 2px; }"
+    },
+    {
+      "name": "Section Heading with Rule",
+      "kind": "custom",
+      "refersTo": "sechead-rule",
+      "description": "Reusable triplet: 1px hairline rule above a 36px/600 headline. The rule scales from 0 → full width on reveal, confirming the document's live outline.",
+      "html": "<section class=\"ds-sechead\"><hr class=\"ds-rule\" /><h2 class=\"ds-h2\">Selected work</h2><p class=\"ds-meta\">Framed, decided and built by me</p></section>",
+      "css": ".ds-sechead { background: #F8F6F3; padding: 40px 32px; font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; } .ds-sechead .ds-rule { height: 1px; background: #E4E0DB; border: 0; margin: 0 0 24px; width: 100%; } .ds-sechead .ds-h2 { font-size: 36px; line-height: 1.15; font-weight: 600; letter-spacing: -0.015em; color: #14121A; margin: 0 0 10px; text-wrap: balance; } .ds-sechead .ds-meta { font-size: 14px; font-weight: 500; color: #6B6472; margin: 0; line-height: 1.5; }"
+    },
+    {
+      "name": "Tool Card",
+      "kind": "card",
+      "refersTo": "tool-card",
+      "description": "White tile on the warm canvas. 16px radius, 28px padding, flat — no shadow, no border. One of three per row at desktop, one at mobile.",
+      "html": "<article class=\"ds-tool\"><h3>AI-assisted build</h3><ul><li>Claude Code</li><li>Mistral</li><li>Prompt design</li><li>Model evaluation</li></ul></article>",
+      "css": ".ds-tool { background: #FFFFFF; border-radius: 16px; padding: 28px; font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 320px; } .ds-tool h3 { font-size: 15px; font-weight: 600; color: #14121A; margin: 0 0 12px; letter-spacing: -0.01em; } .ds-tool ul { list-style: none; padding: 0; margin: 0; } .ds-tool li { font-size: 15px; color: #4A4552; padding: 3px 0; line-height: 1.5; }"
+    },
+    {
+      "name": "Notched Media Frame",
+      "kind": "custom",
+      "refersTo": "media-frame",
+      "description": "The signature device. 16px rounded frame with exactly one 32px notch cut from the corner nearest the adjoining text. Radial-mask gradient; no border, no shadow.",
+      "html": "<figure class=\"ds-media ds-media--bl\"><div class=\"ds-media__inner\"><span class=\"ds-media__note\">Portrait</span></div></figure>",
+      "css": ".ds-media { position: relative; border-radius: 16px; overflow: hidden; background: #EFEBE6; aspect-ratio: 4/5; width: 320px; max-width: 100%; font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; } .ds-media--bl { border-bottom-left-radius: 0; -webkit-mask: radial-gradient(circle 32px at 0 100%, #0000 0 32px, #000 calc(32px + .5px)); mask: radial-gradient(circle 32px at 0 100%, #0000 0 32px, #000 calc(32px + .5px)); } .ds-media__inner { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: #EFEBE6; } .ds-media__note { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #655E56; }"
+    },
+    {
+      "name": "Nav",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Brand lockup at left, three primary links at right. 1px hairline rule beneath. Links hover to the accent.",
+      "html": "<header class=\"ds-nav\"><div class=\"ds-nav__in\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-brand__mark\"></span><span class=\"ds-brand__name\">WiP</span></a><nav class=\"ds-nav__links\"><a href=\"#\">Work</a><a href=\"#\">About</a><a href=\"#\">Contact</a></nav></div><hr class=\"ds-nav__rule\" /></header>",
+      "css": ".ds-nav { background: #F8F6F3; font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; max-width: 1240px; margin: 0 auto; padding: 0 40px; } .ds-nav__in { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 0; } .ds-brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; } .ds-brand__mark { display: inline-block; width: 36px; height: 24px; background: linear-gradient(90deg, #E94E8A, #6E4FE6, #3F80E2, #2EB7A6, #4ECB6E, #E7C84A, #E97A3A, #E7563F); border-radius: 2px; } .ds-brand__name { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; color: #14121A; } .ds-nav__links { display: flex; align-items: center; gap: 30px; } .ds-nav__links a { text-decoration: none; font-size: 15px; font-weight: 500; color: #4A4552; transition: color 0.16s linear; } .ds-nav__links a:hover { color: #4A2244; } .ds-nav__rule { height: 1px; background: #E4E0DB; border: 0; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Work in Progress",
+    "overview": "WiP is both the author's initials and the thesis of the page: William Pénet, and Work in Progress. The identity is anti-perfectionism — always something cooking, humility over polish, ship rather than wait. The page itself behaves like a draft the author trusts: nothing is pretending to be finished, every element reads as revisable, and the one deliberate 'cut corner' (the signature notch on every photographic frame) proves it.\n\nThe system is almost monochrome on a warm off-white canvas. A single heavy grotesque — Instrument Sans at display size — does the compositional work that imagery or ornament would do in a louder system. Hairline rules make the document's outline visible before any copy is read. A single studio-plum accent appears only where William has committed to a decision: a primary action, a hover state, a link under the pointer. Everything else is neutral, structural, and quiet. The restraint is what makes the mark land; the mark is what proves the restraint is a choice rather than a limitation.\n\nThe anti-reference is as important as the reference. This is not a shiny landing page. No glassmorphism, no gradients, no parallax, no 3D, no glow, no stacked shadows, no hover lifts, no eyebrows above headings, no decorative chrome. The craft is in rhythm, type, and the notch.",
+    "keyCharacteristics": [
+      "Warm off-white canvas (#F8F6F3), near-black ink (#14121A), one studio-plum accent (#4A2244).",
+      "A single typeface across every role: Instrument Sans, four weights.",
+      "No shadows anywhere. Depth comes from tonal surface steps and 1px hairline rules.",
+      "A 32px radial-mask notch on every photographic frame — the only ornamental device.",
+      "Generous whitespace. 128px band padding desktop, 72px mobile. Prose capped at 680px.",
+      "Motion reveals once per element and never resets; frames stay fixed while their contents settle."
+    ],
+    "rules": [
+      { "name": "The One Accent Rule", "body": "The studio-plum is used on ≤10% of any given screen. Its rarity is the point. If a band carries the accent on two different elements, the band is doing too much and should be split.", "section": "colors" },
+      { "name": "The No-Gray Rule", "body": "Secondary and tertiary text are tinted ink, not gray. The muted and body tones carry a trace of warm indigo; they're never desaturated flat gray.", "section": "colors" },
+      { "name": "The One-Voice Rule", "body": "Everything on the page is Instrument Sans. No secondary typeface — not for code, not for data, not for small-caps labels, not for 'technical' accents. Variable weight carries every tonal shift.", "section": "typography" },
+      { "name": "The Statement Rule", "body": "Headlines are statements, not slogans. 'I build the products I manage.' is a sentence that ends in a period. No ampersands as decoration, no colons dangling, no three-word fragments.", "section": "typography" },
+      { "name": "The Band Economy Rule", "body": "Each band carries at most one of: the signature notch, a hairline rule, the accent. More than one and the band is doing two things; split it.", "section": "layout" },
+      { "name": "The Prose Measure Rule", "body": "Running paragraphs are capped at 680px even inside a 1240px container. The whitespace is the pause between claims.", "section": "layout" },
+      { "name": "The Flat Rule", "body": "No box-shadow, no drop-shadow, no filter blur, no inner glow, no colored halo. Hover and focus states change color only — never scale, never shift, never lift.", "section": "elevation" },
+      { "name": "The Hairline Rule", "body": "Rules are 1px, #E4E0DB, and used only where they do work: beneath the nav, above the footer, under positioning columns, between project entries, and as the base of in-copy text links (one tier darker, #D8D2CB). They are never used as decoration.", "section": "elevation" },
+      { "name": "The Signature Notch Rule", "body": "Every photographic image sits in a 16px rounded frame with exactly one 32px notch cut from the corner nearest the adjoining text block. The notch radius is literal — 32px — and never scales with the image. It is applied only to photographic and product media; never to cards, panels, buttons, or the logo. No border, no shadow, no overlay accompanies the notch. During the entrance animation, the frame geometry stays fixed; only the image inside it moves.", "section": "shapes" },
+      { "name": "The Rectilinear Rule", "body": "Outside the notch and the radii above, every surface is a rectangle. No pill buttons, no circles, no polygons, no clipped diagonals, no radial masks beyond the single notch.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do reach for Studio Plum only when a decision has been made. If you can't name what the user is deciding by clicking it, the color is wrong.",
+      "Do use the signature notch on every photographic frame and only on photographic frames.",
+      "Do vary weight (400 / 500 / 600 / 700) rather than reaching for a second font. The One-Voice Rule is binding.",
+      "Do carry the voice from PRODUCT.md verbatim — plain, direct, trade-off-aware, 1st-person-singular, no exclamation marks.",
+      "Do cap running paragraphs at 680px even in a 1240px container.",
+      "Do use text-wrap: balance on display and headline sizes; the line breaks are design.",
+      "Do honor prefers-reduced-motion: restore every element to its final visible state, keep instantaneous color feedback on controls."
+    ],
+    "donts": [
+      "Don't add shadows, gradients, glass blur, parallax, or 3D. The Flat Rule is total.",
+      "Don't scale, translate, or lift components on hover. Color-only feedback.",
+      "Don't place an eyebrow or kicker above a heading. The heading carries its own weight.",
+      "Don't use gray for secondary text. Tint the ink; the palette is warm all the way down.",
+      "Don't carry the notch to anything that isn't a photographic frame — not to cards, not to panels, not to buttons, not to the logo.",
+      "Don't introduce a second accent color. The system is one-accent on purpose.",
+      "Don't stage sections with '01 / 02 / 03' numbering. The reader doesn't need the count.",
+      "Don't reach for Unicode glyphs or emoji where a drawn SVG icon belongs. The current arrow icon is authored; keep it so.",
+      "Don't fabricate testimonials, logos of past employers, or quantitative metrics. Placeholders are labeled as placeholders."
+    ]
+  }
+}

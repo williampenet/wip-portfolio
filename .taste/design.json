@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "foundation": {
+    "strategy": "extend",
+    "existingAssets": [
+      "WiP logo: seven tapered brushstroke arcs sweeping vertically in a bright multicolour gradient (pink, violet, blue, teal, green, yellow, orange, coral) on a transparent ground — supplied as a conversation attachment only, not yet a file in the project directory",
+      "Brand names: WiP (company) and William Pénet (person)",
+      "Contact email: william.penet@gmail.com",
+      "Live project URL: https://williampenet.github.io/nightcrawler/"
+    ],
+    "lockedDecisions": [
+      "Light canvas on every band. Dark reference screenshots are adapted to the light system rather than reproduced, because the user explicitly asked for a light background. Contrast rhythm comes from surface steps (warm off-white canvas, white cards, one deep-ink closing panel) and near-black ink headlines instead of inverted sections.",
+      "The supplied WiP brushstroke logo is the identity. It appears at full colour, unmodified, in the nav and footer, and is the only saturated multicolour element on the page.",
+      "No glassmorphism, gradient fills, parallax, 3D, glow or stacked shadows. The user asked for minimalist with no shiny effects.",
+      "Every project card carries four elements: an image, a Why block, a How block, and an external link button that opens in a new tab.",
+      "Nightcrawler links to its real URL, https://williampenet.github.io/nightcrawler/. The three other project entries are original self-initiated concept builds, visibly labelled as concept builds in page copy, with clearly marked placeholder link destinations.",
+      "The standalone method section is removed. Its intent lives inside each project's Why and How blocks.",
+      "Single self-contained static HTML document with inlined styles and local or inlined assets, deployable as a public Claude artifact or on GitHub Pages. No backend, no build step, no runtime API calls.",
+      "Accessible by construction: semantic landmarks, visible focus rings, AA contrast on every text pairing, and honoured prefers-reduced-motion."
+    ]
+  },
+  "assetActions": [
+    {
+      "asset": "WiP brushstroke logo",
+      "action": "protect",
+      "reason": "The user supplied this logo directly and it is the only existing piece of visual identity. It is used at full colour, unmodified, with no recolouring, cropping or effects. The Assets phase must persist it as a real transparent PNG or SVG file in the project directory, since it currently exists only as a conversation attachment."
+    },
+    {
+      "asset": "WiP wordmark lockup",
+      "action": "create",
+      "reason": "The supplied logo is a mark with no accompanying typographic wordmark. A simple typographic lockup is needed for the nav and footer so the mark can sit beside the name at small sizes without losing legibility."
+    },
+    {
+      "asset": "Colour palette",
+      "action": "create",
+      "reason": "No palette was supplied. A light-canvas neutral system with a single violet accent drawn from the logo's violet stroke is needed to satisfy the stated light-background preference while keeping the logo as the only loud element."
+    },
+    {
+      "asset": "Type system",
+      "action": "create",
+      "reason": "No typeface was supplied. The references are type-led with a heavy geometric grotesque headline, so a single sans family across display and UI roles is needed."
+    },
+    {
+      "asset": "Portrait and working-context photograph",
+      "action": "create",
+      "reason": "No photography was supplied. The About band in the references carries a large photograph, and the project entries each require media."
+    }
+  ],
+  "creativeDirection": {
+    "summary": "A quiet, type-led portfolio on warm off-white that reads like a well-argued product document. The page makes its case in plain sentences and hairline rules, not in effects. Generous whitespace and a single heavy grotesque headline carry the structure; the only saturated element on the entire page is the WiP mark itself. Each project is presented the way a product manager actually presents work — what the problem was, what was cut, how it shipped — with a photograph that grounds it in something real rather than decorating it.",
+    "traits": [
+      {
+        "trait": "Plain-spoken",
+        "expression": "Headlines are statements, not slogans. Body copy names the specific decision and the specific tradeoff.",
+        "boundary": "not terse to the point of coldness — the sentences are human, just unembellished"
+      },
+      {
+        "trait": "Type-led",
+        "expression": "A single heavy grotesque at large display sizes does the compositional work that imagery or ornament would do elsewhere.",
+        "boundary": "not typographic experimentation — one family, predictable scale, no mixed weights within a line"
+      },
+      {
+        "trait": "Structurally legible",
+        "expression": "Hairline rules and small caps labels make the document's outline visible before any copy is read.",
+        "boundary": "not a wireframe aesthetic — rules are sparse and the type is finished, not placeholder-grey"
+      },
+      {
+        "trait": "Grounded",
+        "expression": "Photography shows real working contexts — a laptop on an actual desk, natural daylight — so the concept builds still feel like things that were made.",
+        "boundary": "not staged lifestyle imagery or stock-office cliché"
+      },
+      {
+        "trait": "Restrained in colour",
+        "expression": "Near-monochrome neutrals with one violet accent reserved for primary actions and the occasional label tint.",
+        "boundary": "not colourless — the logo's full multicolour gradient anchors the identity at both ends of the page"
+      }
+    ],
+    "tension": "An almost-monochrome, deliberately quiet page whose single loud element is the identity itself. The restraint is what makes the mark land, and the mark is what proves the restraint is a choice rather than a limitation."
+  },
+  "signatureDevice": {
+    "name": "Notched media frame",
+    "status": "candidate",
+    "description": "Every photographic image sits in a rounded frame with exactly one corner replaced by an inverted notch — a concave quarter-round cut — on the corner nearest the adjoining text. Observed directly in the ritovex hero reference, where the portrait carries an inverted corner notch against the headline column. It gives the page a recognisable silhouette without adding any decoration, colour or effect.",
+    "invariants": [
+      "Exactly one notch per image, on the corner nearest the adjoining text block.",
+      "Notch radius is 32px, exactly twice the 16px media corner radius, and never scales with the image.",
+      "Applied only to photographic and product media — never to cards, panels, buttons or the logo.",
+      "No border, shadow or overlay on the frame. The notch is the only treatment.",
+      "The frame geometry stays fixed during the entrance animation; only the image inside it moves."
+    ]
+  },
+  "restraint": "The notch, the hairline rule and the violet accent each appear at most once per band. If a band needs a second of any of them, the band is doing too much and should be split.",
+  "paletteRecipe": {
+    "themes": {
+      "light": {
+        "accentSeed": "#5A3FD6",
+        "neutralSeed": "#6B6472",
+        "surfaceContrast": "quiet"
+      }
+    },
+    "locked": {}
+  },
+  "typefaces": [
+    {
+      "family": "Instrument Sans",
+      "source": "https://fonts.google.com/specimen/Instrument+Sans",
+      "files": "https://github.com/google/fonts/tree/main/ofl/instrumentsans",
+      "license": "SIL Open Font License 1.1 — https://github.com/google/fonts/blob/main/ofl/instrumentsans/OFL.txt",
+      "roles": [
+        "display headline",
+        "section heading",
+        "project name",
+        "body copy",
+        "small caps label",
+        "metadata",
+        "nav link",
+        "button label"
+      ],
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    }
+  ],
+  "interfaceDirection": {
+    "rhythm": "8px base unit. Section padding 128px desktop, 72px mobile. Max content width 1240px, prose measure capped at 680px.",
+    "layout": "Hero is a 46/54 split with the headline column left and the notched portrait right, following the ritovex composition. Project entries follow the creatiie anatomy: media, bold name, right-aligned year, muted subtitle, Why and How paragraphs, then metadata pairs. Positioning uses the meridian three-column pattern with hairline rules beneath each column. Toolbox uses the fabrica pattern of white rounded panels on the light canvas. About follows the vistal structure: a small caps label at left, heading and paragraph in the right two-thirds, then a large photograph. Footer follows the mello pattern: a hairline rule above, logo left, link columns right.",
+    "type": "Hero headline 68px / 1.05 at weight 700 with -0.02em tracking, dropping to 40px / 1.1 on mobile. Section headings 36px at 600. Project names 26px at 600. Body 17px / 1.6 at 400. Small caps labels 12px at 600 with 0.08em tracking. Metadata 14px at 500.",
+    "radii": "8px for controls, 12px for small panels, 16px for media and cards, plus the 32px notch on media only.",
+    "elevation": "No shadows anywhere. Separation comes from surface steps and hairline dividers.",
+    "dividers": "1px hairline rules only where the references show them: beneath the nav, beneath each positioning column, between project entries, and above the footer.",
+    "containment": "Cards are reserved for project entries and toolbox groups. Positioning columns, principles and the About band stay unboxed on the canvas.",
+    "controls": "Primary button is a solid violet accent fill with the Ritovex geometry and weight. Secondary button is a near-black outline, pill or circular depending on context. Focus ring is 2px accent at 2px offset, always visible, never removed."
+  },
+  "imageDirection": {
+    "subjects": [
+      "Nightcrawler running on a laptop screen in a real desk setting, natural daylight, shot slightly off-axis",
+      "First concept build shown on a device in a working context",
+      "Second concept build shown on a device in a working context",
+      "Third concept build shown on a device in a working context",
+      "A working-context image for the About band — desk, notebook, screen — without a recognisable face"
+    ],
+    "treatment": "Natural daylight, consistent colour temperature across all five images, no filters, no heavy grade, no synthetic lighting. Shallow but not extreme depth of field. Composition leaves room for the notch to read.",
+    "ratios": "3:2 or 4:3 for project media, 4:5 for the hero and About images.",
+    "constraints": [
+      "All images stored locally and inlined in the final document.",
+      "No recognisable real named person is depicted, and no image implies client authorship or a real engagement.",
+      "Generated imagery depicts the concept builds as the user's own work only."
+    ]
+  },
+  "motionDirection": {
+    "principles": [
+      "Hero entrance runs on load: the small label, headline, supporting paragraph, button pair and notched portrait rise 16px and fade in over 520–640ms with an 80ms stagger, total capped at 240ms of stagger. The portrait frame itself does not move; only its contents settle.",
+      "Project media reveals on scroll: the image scales from 1.04 to 1 inside the overflow-hidden notched frame over 560–720ms while the text column rises 16px, staggered 80ms and capped at 240ms. Each project card is observed as its own group and unobserved immediately after it fires, so the reveal runs once and never resets.",
+      "Section headings reveal on scroll with the heading rising 12px over 450–560ms and the hairline rule growing from 0 to full width over 600ms. Observed with threshold 0 and a positive bottom rootMargin so the trigger fires reliably on fast scroll.",
+      "Principle and toolbox items reveal in sequence over 450–520ms with a 60–80ms stagger, each group observed independently.",
+      "Direct feedback: buttons and links transition colour and border over 140–200ms on hover and 120ms on press. Nothing scales or lifts.",
+      "Reduced motion restores every element to its final visible state with no transform or opacity transition, keeping only instantaneous colour feedback on controls."
+    ],
+    "avoid": [
+      "Global opacity:0 reveal classes that leave content invisible if the observer never fires",
+      "Transforms on ancestors of sticky or fixed elements",
+      "document.getAnimations() cancellation that stops unrelated animations",
+      "Reveals that reset when an element scrolls back out of view",
+      "Parallax, scroll-linked scrubbing, counters, marquees, typewriter effects, glow or pulse loops",
+      "Hover lifts, scale-ups or shadow growth on cards and buttons",
+      "Staggers that exceed 240ms total or entrances longer than 800ms"
+    ]
+  },
+  "voice": {
+    "person": "First person singular. William speaking directly about his own work.",
+    "tone": "Plain, specific and unhurried. States the problem, names what was cut, and says what shipped. Confident without selling.",
+    "vocabulary": "Concrete product language — scope, tradeoff, constraint, shipped, cut, tested. Real nouns over abstractions.",
+    "avoid": [
+      "Buzzwords and growth jargon (leverage, synergy, 10x, game-changing, seamless)",
+      "Passion language (passionate about, love building, obsessed with)",
+      "Invented numbers, percentages or measured outcomes",
+      "Client names, employer names, testimonials or credentials that were not supplied",
+      "Hedging (I think maybe, sort of, kind of)",
+      "Exclamation marks and emoji"
+    ]
+  }
+}
