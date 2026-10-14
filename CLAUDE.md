@@ -29,6 +29,14 @@ Read before any change:
   is large or risky).
 - Log every session's actions in `docs/BUILD_LOG.md`.
 
+## Private preview
+- No public deployment while the repo is private (GitHub Pages on a private repo needs GitHub Pro:
+  https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+- Preview = private claude.ai artifact https://claude.ai/artifact/XTgW9uK9Gixs3S9WAX5LUu
+  (`index.html` as the page, each `<slug>/index.html` as a file). After a change to `main`,
+  republish it to the same URL (Artifact tool, `url` = that link) so William sees it on any device.
+- Known gap: `william-penet-cv.pdf` is linked from the pages but is not in the project.
+
 ## Rules
 - Repo and docs in English; conversation with William in French.
 - Every claim or conclusion is sourced (official doc, measurement, test) or marked "unverified".
