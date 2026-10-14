@@ -13,7 +13,7 @@ Règles d'écriture
 - Un paragraphe tient sur UNE ligne (aussi long que nécessaire). Pour plusieurs paragraphes,
   répète `text.en:` / `text.fr:` dans l'ordre.
 - `|` sépare les éléments d'une liste (tags, facts) ou le retour à la ligne du titre d'accueil.
-- Mise en forme : **gras**, [texte du lien](https://adresse), [lien vers une page](page:ai-works).
+- Mise en forme : **gras**, [texte du lien](https://adresse), [lien vers une page](page:freelance).
 - `{icon}` place la petite icône violette dans une phrase d'intro (voir `icon:`).
 - Un texte qui commence par [ ... ] s'affiche en gris italique : c'est un emplacement à remplir.
 - Les espaces insécables du français (avant : ; ? ! et dans « ») sont ajoutées automatiquement.
@@ -57,27 +57,39 @@ text.en: Let’s talk.
 text.fr: On en parle ?
 
 
-# Page: ai-works
-title: AI Works
-icon: scan-text
-intro.en: Products where a model does the reading {icon} and I decide how far to trust it. Build rather than buy, when it’s cheaper and quicker to change.
-intro.fr: Des produits où un modèle fait la lecture {icon} et où je décide jusqu’où lui faire confiance. Construire plutôt qu’acheter, quand c’est moins cher et plus rapide à faire évoluer.
+# Page: stuff-i-built
+title: Stuff I built
+icon: hammer
+intro.en: Tools I built on my own time {icon}, because I wanted them to exist. All of them are live.
+intro.fr: Des outils construits sur mon temps libre {icon}, parce que je voulais qu’ils existent. Tous sont en ligne.
 
 ## Card
-logo: interflora | I
-tags: 2025 | Interflora | Data Product Manager
-title.en: AI sentiment analysis for NPS
-title.fr: Analyse de sentiment NPS par IA
-text.en: I automated sentiment analysis of 40k+ monthly customer comments with Google Gemini 2.5 Flash.
-text.fr: J’ai automatisé l’analyse de sentiment de plus de 40 000 commentaires clients par mois avec Google Gemini 2.5 Flash.
-text.en: Feedback came in through NPS, Trustpilot, Hotjar, Zendesk and social, in several languages. The CX team tagged it by hand, so insights landed late and read differently from one business unit to the next.
-text.fr: Les retours arrivaient par le NPS, Trustpilot, Hotjar, Zendesk et les réseaux, en plusieurs langues. L’équipe CX les classait à la main : les enseignements arrivaient tard et se lisaient différemment d’une BU à l’autre.
-text.en: Every comment is classified twice; disagreements go to a human. **I chose to build in-house** so we could change the prompt daily on our own data instead of waiting for a vendor’s roadmap.
-text.fr: Chaque commentaire est classé deux fois ; les désaccords remontent à un humain. **J’ai choisi de construire en interne** pour pouvoir modifier le prompt chaque jour sur nos propres données, sans attendre la feuille de route d’un éditeur.
-facts.en: 3 analyst-days a month → a few minutes | 95% accuracy on blind evaluation | 40× cheaper than the vendor quote
-facts.fr: 3 jours d’analyste par mois → quelques minutes | 95 % de précision en évaluation à l’aveugle | 40× moins cher que le devis de l’éditeur
-small.en: Stack: Gemini 2.5 Flash, Python, BigQuery, GCP, Power BI · Internal product, no public link.
-small.fr: Outils : Gemini 2.5 Flash, Python, BigQuery, GCP, Power BI · Produit interne, pas de lien public.
+tags.en: Live | Solo build
+tags.fr: En ligne | Projet solo
+title: Nightcrawler
+text.en: Concert discovery that reads your taste against venue listings.
+text.fr: La découverte de concerts qui lit un goût musical face aux programmations des salles.
+text.en: Type in the artists you care about, or connect Spotify and let MusicBrainz fill in the styles. A Mistral model scores each concert and sorts it into Must Not Miss, For You or Discovery. State lives in the browser.
+text.fr: On saisit ses artistes, ou on connecte Spotify et MusicBrainz complète les styles. Un modèle Mistral note chaque concert et le range dans Must Not Miss, For You ou Discovery. L’état vit dans le navigateur.
+text.en: **Cut on purpose:** ticketing, social features and accounts. It had to be useful on the first visit, with nothing to sign up for.
+text.fr: **Coupé volontairement :** billetterie, fonctions sociales et comptes. L’outil devait servir dès la première visite, sans inscription.
+small.en: Stack: Mistral, Spotify, MusicBrainz · [williampenet.github.io/nightcrawler](https://williampenet.github.io/nightcrawler/)
+small.fr: Outils : Mistral, Spotify, MusicBrainz · [williampenet.github.io/nightcrawler](https://williampenet.github.io/nightcrawler/)
+image: screens/nightcrawler.jpg | https://williampenet.github.io/nightcrawler/
+
+## Card
+tags.en: Live | Solo build
+tags.fr: En ligne | Projet solo
+title: SpotiBoard
+text.en: 15 years of Spotify history, finally in a dashboard that answers questions.
+text.fr: 15 ans d’historique Spotify, enfin dans un tableau de bord qui répond aux questions.
+text.en: Spotify Wrapped is a 60-second showreel of one calendar year. I loaded the full export into Supabase, with a Streamlit interface and Plotly charts.
+text.fr: Spotify Wrapped, c’est une bande-annonce de 60 secondes sur une année civile. J’ai chargé l’export complet dans Supabase, avec une interface Streamlit et des graphiques Plotly.
+text.en: **Cut on purpose:** ranking charts switch themselves off when a filter is active. A Top 10 that silently excludes most of the data is misinformation dressed as a number.
+text.fr: **Coupé volontairement :** les classements se désactivent dès qu’un filtre est actif. Un Top 10 qui exclut en silence l’essentiel des données, c’est de la désinformation déguisée en chiffre.
+small.en: Stack: Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
+small.fr: Outils : Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
+image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
 
 
 # Page: freelance
@@ -95,12 +107,19 @@ title: Bedrock Streaming
 text: Product Manager.
 
 ## Card
-compact: yes
 logo: interflora | I
 tags: 2024 – 2025 | Data
 title: Interflora
-text.en: Data Product Manager. The headline project is in [AI Works](page:ai-works).
-text.fr: Data Product Manager. Le projet principal est détaillé dans [AI Works](page:ai-works).
+text.en: Data Product Manager. I automated sentiment analysis of 40k+ monthly customer comments with Google Gemini 2.5 Flash.
+text.fr: Data Product Manager. J’ai automatisé l’analyse de sentiment de plus de 40 000 commentaires clients par mois avec Google Gemini 2.5 Flash.
+text.en: Feedback came in through NPS, Trustpilot, Hotjar, Zendesk and social, in several languages. The CX team tagged it by hand, so insights landed late and read differently from one business unit to the next.
+text.fr: Les retours arrivaient par le NPS, Trustpilot, Hotjar, Zendesk et les réseaux, en plusieurs langues. L’équipe CX les classait à la main : les enseignements arrivaient tard et se lisaient différemment d’une BU à l’autre.
+text.en: Every comment is classified twice; disagreements go to a human. **I chose to build in-house** so we could change the prompt daily on our own data instead of waiting for a vendor’s roadmap.
+text.fr: Chaque commentaire est classé deux fois ; les désaccords remontent à un humain. **J’ai choisi de construire en interne** pour pouvoir modifier le prompt chaque jour sur nos propres données, sans attendre la feuille de route d’un éditeur.
+facts.en: 3 analyst-days a month → a few minutes | 95% accuracy on blind evaluation | 40× cheaper than the vendor quote
+facts.fr: 3 jours d’analyste par mois → quelques minutes | 95 % de précision en évaluation à l’aveugle | 40× moins cher que le devis de l’éditeur
+small.en: Stack: Gemini 2.5 Flash, Python, BigQuery, GCP, Power BI · Internal product, no public link.
+small.fr: Outils : Gemini 2.5 Flash, Python, BigQuery, GCP, Power BI · Produit interne, pas de lien public.
 
 ## Card
 compact: yes
@@ -148,63 +167,21 @@ text.fr: Product Manager : les fondations d’une startup, le streaming musical.
 # Page: b-sides
 title: B-Sides
 icon: moon
-intro.en: Same brain, own time {icon}. Tools I built alone because I wanted them to exist. Both are live.
-intro.fr: Même cerveau, temps libre {icon}. Des outils que j’ai construits seul parce que je voulais qu’ils existent. Les deux sont en ligne.
+intro.en: Same brain, own time {icon}. Volunteer work with Data for Good and Time for the Planet. [One sentence on why — to come.]
+intro.fr: Même cerveau, temps libre {icon}. Engagement bénévole avec Data for Good et Time for the Planet. [Une phrase sur le sens de l’engagement — à venir.]
 
 ## Card
-tags.en: Live | Solo build
-tags.fr: En ligne | Projet solo
-title: Nightcrawler
-text.en: Concert discovery that reads your taste against venue listings.
-text.fr: La découverte de concerts qui lit un goût musical face aux programmations des salles.
-text.en: Type in the artists you care about, or connect Spotify and let MusicBrainz fill in the styles. A Mistral model scores each concert and sorts it into Must Not Miss, For You or Discovery. State lives in the browser.
-text.fr: On saisit ses artistes, ou on connecte Spotify et MusicBrainz complète les styles. Un modèle Mistral note chaque concert et le range dans Must Not Miss, For You ou Discovery. L’état vit dans le navigateur.
-text.en: **Cut on purpose:** ticketing, social features and accounts. It had to be useful on the first visit, with nothing to sign up for.
-text.fr: **Coupé volontairement :** billetterie, fonctions sociales et comptes. L’outil devait servir dès la première visite, sans inscription.
-small.en: Stack: Mistral, Spotify, MusicBrainz · [williampenet.github.io/nightcrawler](https://williampenet.github.io/nightcrawler/)
-small.fr: Outils : Mistral, Spotify, MusicBrainz · [williampenet.github.io/nightcrawler](https://williampenet.github.io/nightcrawler/)
-image: screens/nightcrawler.jpg | https://williampenet.github.io/nightcrawler/
-
-## Card
-tags.en: Live | Solo build
-tags.fr: En ligne | Projet solo
-title: SpotiBoard
-text.en: 15 years of Spotify history, finally in a dashboard that answers questions.
-text.fr: 15 ans d’historique Spotify, enfin dans un tableau de bord qui répond aux questions.
-text.en: Spotify Wrapped is a 60-second showreel of one calendar year. I loaded the full export into Supabase, with a Streamlit interface and Plotly charts.
-text.fr: Spotify Wrapped, c’est une bande-annonce de 60 secondes sur une année civile. J’ai chargé l’export complet dans Supabase, avec une interface Streamlit et des graphiques Plotly.
-text.en: **Cut on purpose:** ranking charts switch themselves off when a filter is active. A Top 10 that silently excludes most of the data is misinformation dressed as a number.
-text.fr: **Coupé volontairement :** les classements se désactivent dès qu’un filtre est actif. Un Top 10 qui exclut en silence l’essentiel des données, c’est de la désinformation déguisée en chiffre.
-small.en: Stack: Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
-small.fr: Outils : Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
-image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
-
-
-# Page: data-for-good
+logo: data-for-good | DG
+tags.en: [years] | Volunteer
+tags.fr: [années] | Bénévole
 title: Data for Good
-icon: heart-handshake
-intro.en: Volunteer work {icon} with Data for Good. [One sentence on why — to come.]
-intro.fr: Engagement bénévole {icon} avec Data for Good. [Une phrase sur le sens de l’engagement — à venir.]
+text.en: [The project, my role, what changed. To come.]
+text.fr: [Le projet, mon rôle, ce qui a changé. À venir.]
 
 ## Card
+logo: time-for-the-planet | TP
 tags.en: [years] | Volunteer
 tags.fr: [années] | Bénévole
-title.en: [Project name]
-title.fr: [Nom du projet]
-text.en: [Two or three sentences: the project, my role, what changed. To come.]
-text.fr: [Deux ou trois phrases : le projet, mon rôle, ce qui a changé. À venir.]
-
-
-# Page: time-for-the-planet
 title: Time for the Planet
-icon: sprout
-intro.en: Volunteer work {icon} with Time for the Planet. [One sentence on why — to come.]
-intro.fr: Engagement bénévole {icon} avec Time for the Planet. [Une phrase sur le sens de l’engagement — à venir.]
-
-## Card
-tags.en: [years] | Volunteer
-tags.fr: [années] | Bénévole
-title.en: [Project name]
-title.fr: [Nom du projet]
-text.en: [Two or three sentences: the project, my role, what changed. To come.]
-text.fr: [Deux ou trois phrases : le projet, mon rôle, ce qui a changé. À venir.]
+text.en: [The project, my role, what changed. To come.]
+text.fr: [Le projet, mon rôle, ce qui a changé. À venir.]

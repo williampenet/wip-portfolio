@@ -24,17 +24,14 @@ ASSETS = {
     "{{MONO400_B64}}": "assets/fonts/ibm-plex-mono-latin-400.woff2",
     "{{MONO500_B64}}": "assets/fonts/ibm-plex-mono-latin-500.woff2",
     "{{LOGO_B64}}": "assets/logo.webp",
-    "{{DK_AI_B64}}": "assets/dock/ai-works.png",
+    "{{DK_BUILT_B64}}": "assets/dock/stuff-i-built.png",
     "{{DK_FREELANCE_B64}}": "assets/dock/freelance.png",
     "{{DK_BSIDES_B64}}": "assets/dock/b-sides.png",
-    "{{DK_DFG_B64}}": "assets/dock/data-for-good.png",
-    "{{DK_TFTP_B64}}": "assets/dock/time-for-the-planet.png",
-    "{{DK_LINKEDIN_B64}}": "assets/dock/linkedin.png",
     "{{DK_GITHUB_B64}}": "assets/dock/github.png",
 }
 
 # Folder pages, in dock order. Their text lives in content.md under "# Page: <slug>".
-FOLDERS = ["ai-works", "freelance", "b-sides", "data-for-good", "time-for-the-planet"]
+FOLDERS = ["stuff-i-built", "freelance", "b-sides"]
 
 MIME = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",
         ".webp": "image/webp", ".svg": "image/svg+xml"}

@@ -13,8 +13,7 @@ Read before any change:
 ## How the site is built
 - Sources: `content.md` (every text), `src/index.template.html` (markup and CSS), `assets/`.
 - `python3 build.py` (no dependency) inlines fonts and images and writes the generated pages:
-  `index.html` and `<slug>/index.html` (about, ai-works, freelance, b-sides, data-for-good,
-  time-for-the-planet).
+  `index.html` and `<slug>/index.html` (about, stuff-i-built, freelance, b-sides).
 - Never edit a generated `index.html` by hand: edit the sources, run the build, commit both.
 - CI (`.github/workflows/build.yml`) fails if the committed pages differ from a fresh build.
 - `assets/logos-src/` holds original logo files; only processed copies in `assets/logos`,

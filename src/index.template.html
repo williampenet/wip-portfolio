@@ -107,11 +107,9 @@ html[data-page="home"] .layer { display: none; }
 @keyframes lIn { from { transform: scale(.06); opacity: 0; border-radius: 28px; } 50% { opacity: 1; } to { transform: none; opacity: 1; border-radius: 0; } }
 @keyframes lOut { from { transform: none; opacity: 1; border-radius: 0; } to { transform: scale(.06); opacity: 0; border-radius: 28px; } }
 .view { display: none; }
-html[data-page="ai-works"] .view[data-view="ai-works"],
+html[data-page="stuff-i-built"] .view[data-view="stuff-i-built"],
 html[data-page="freelance"] .view[data-view="freelance"],
 html[data-page="b-sides"] .view[data-view="b-sides"],
-html[data-page="data-for-good"] .view[data-view="data-for-good"],
-html[data-page="time-for-the-planet"] .view[data-view="time-for-the-planet"],
 html[data-page="about"] .view[data-view="about"] { display: block; }
 .view h1:focus, #dock:focus { outline: none; }
 
@@ -221,15 +219,12 @@ html[data-page="about"] .view[data-view="about"] { display: block; }
 <div class="dock-wrap">
 <nav class="dock" id="dock" tabindex="-1" aria-label="Folders and contact" data-fr-aria-label="Dossiers et contact">
 <ul role="list">
-<li><a class="dk" href="{{ROOT}}ai-works/" data-nav="ai-works" data-tip="AI Works" aria-label="AI Works"><span class="dk-face"><img src="data:image/png;base64,{{DK_AI_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">AI Works</span></a></li>
+<li><a class="dk" href="{{ROOT}}stuff-i-built/" data-nav="stuff-i-built" data-tip="Stuff I built" aria-label="Stuff I built"><span class="dk-face"><img src="data:image/png;base64,{{DK_BUILT_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">Stuff I built</span></a></li>
 <li><a class="dk" href="{{ROOT}}freelance/" data-nav="freelance" data-tip="Freelance" aria-label="Freelance"><span class="dk-face"><img src="data:image/png;base64,{{DK_FREELANCE_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">Freelance</span></a></li>
 <li><a class="dk" href="{{ROOT}}b-sides/" data-nav="b-sides" data-tip="B-Sides" aria-label="B-Sides"><span class="dk-face"><img src="data:image/png;base64,{{DK_BSIDES_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">B-Sides</span></a></li>
-<li><a class="dk" href="{{ROOT}}data-for-good/" data-nav="data-for-good" data-tip="Data for Good" aria-label="Data for Good"><span class="dk-face"><img src="data:image/png;base64,{{DK_DFG_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">Data for Good</span></a></li>
-<li><a class="dk" href="{{ROOT}}time-for-the-planet/" data-nav="time-for-the-planet" data-tip="Time for the Planet" aria-label="Time for the Planet"><span class="dk-face"><img src="data:image/png;base64,{{DK_TFTP_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">Time for the Planet</span></a></li>
 </ul>
 <span class="dock-sep" aria-hidden="true"></span>
 <ul role="list">
-<li><a class="dk" href="https://www.linkedin.com/in/williampenet/" target="_blank" rel="noopener" data-tip="LinkedIn" aria-label="LinkedIn (opens in a new tab)" data-fr-aria-label="LinkedIn (nouvel onglet)"><span class="dk-face"><img src="data:image/png;base64,{{DK_LINKEDIN_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">LinkedIn</span></a></li>
 <li><a class="dk" href="https://github.com/williampenet" target="_blank" rel="noopener" data-tip="GitHub" aria-label="GitHub (opens in a new tab)" data-fr-aria-label="GitHub (nouvel onglet)"><span class="dk-face"><img src="data:image/png;base64,{{DK_GITHUB_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">GitHub</span></a></li>
 <li><a class="dk" href="mailto:william.penet@gmail.com" data-tip="william.penet@gmail.com" aria-label="Email william.penet@gmail.com" data-fr-aria-label="Écrire à william.penet@gmail.com"><span class="dk-face"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#3D82E6"/><rect x="11" y="18" width="42" height="28" rx="4" fill="#FFFFFF"/><path d="M12.5 20.5 L32 34.5 L51.5 20.5" fill="none" stroke="#3D82E6" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/></svg></span><span class="dk-label" aria-hidden="true">Email</span></a></li>
 <li><a class="dk" href="{{ROOT}}william-penet-cv.pdf" download data-tip="CV · pdf" aria-label="Download CV (PDF)" data-fr-aria-label="Télécharger le CV (PDF)"><span class="dk-face"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#FBF8F2"/><rect width="64" height="10" fill="#4A2244"/><text x="32" y="38" text-anchor="middle" fill="#14121A" style="font-family:'Instrument Sans',sans-serif;font-size:22px;font-weight:700;letter-spacing:-.5px">CV</text><rect x="20" y="45" width="24" height="2.4" rx="1.2" fill="#D8D2CB"/><rect x="24" y="50.5" width="16" height="2.4" rx="1.2" fill="#D8D2CB"/></svg></span><span class="dk-label" aria-hidden="true">CV</span></a></li>
@@ -283,7 +278,7 @@ html[data-page="about"] .view[data-view="about"] { display: block; }
   var doc = document.documentElement;
   var home = document.getElementById('home');
   var layer = document.getElementById('layer');
-  var PAGES = ['ai-works', 'freelance', 'b-sides', 'data-for-good', 'time-for-the-planet', 'about'];
+  var PAGES = ['stuff-i-built', 'freelance', 'b-sides', 'about'];
   var TITLES = { en: { home: {{TITLE_HOME_EN_JS}} }, fr: { home: {{TITLE_HOME_FR_JS}} } };
   var LABELS = {
     en: { theme: ['Switch to dark theme', 'Switch to light theme'] },
