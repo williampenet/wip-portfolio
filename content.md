@@ -203,8 +203,8 @@ tags.fr: 2014 – 2016 | Lyon · Paris · Montréal
 title: DIE POD DIE
 text.en: Listening sessions where a full vinyl album is played start to finish on good equipment, for 40 people at most. Each session paired a well-known classic with a lesser-known contemporary record.
 text.fr: Des sessions d’écoute où un vinyle est joué en entier sur du bon matériel, devant 40 personnes au plus. Chaque session associait un classique connu à un album contemporain moins connu.
-text.en: Started in Lyon in 2014 (Le Périscope, Le Marché Gare), then Paris (Le 104) and Montréal (Centre Phi), for three years. [My role. To come.]
-text.fr: Lancé à Lyon en 2014 (Le Périscope, Le Marché Gare), puis Paris (Le 104) et Montréal (Centre Phi), pendant trois ans. [Mon rôle. À venir.]
+text.en: Started in Lyon in 2014 (Le Périscope, Le Marché Gare), then Paris (Le 104) and Montréal (Centre Phi), for three years. **Founder and host.**
+text.fr: Lancé à Lyon en 2014 (Le Périscope, Le Marché Gare), puis Paris (Le 104) et Montréal (Centre Phi), pendant trois ans. **Fondateur et animateur.**
 small: [bazaar-bonzo.ovh/diepoddie](https://bazaar-bonzo.ovh/diepoddie/)
 
 ## Card
@@ -213,8 +213,8 @@ logo: brrrr-sessions | BS
 tags.en: 2011 | Paris | Playlists
 tags.fr: 2011 | Paris | Playlists
 title: Brrrr Sessions
-text.en: A free weekly playlist of about 40 minutes: a side A of standard-length tracks, a side B of long ones, some over 15 minutes. Open to guest selectors.
-text.fr: Une playlist hebdomadaire gratuite d’environ 40 minutes : une face A de morceaux au format classique, une face B de titres longs, parfois plus de 15 minutes. Ouverte aux sélections invitées.
+text.en: A free weekly playlist of about 40 minutes: a side A of standard-length tracks, a side B of long ones, some over 15 minutes. Open to guest selectors. **Founder and host.**
+text.fr: Une playlist hebdomadaire gratuite d’environ 40 minutes : une face A de morceaux au format classique, une face B de titres longs, parfois plus de 15 minutes. Ouverte aux sélections invitées. **Fondateur et animateur.**
 small: [bazaar-bonzo.ovh/brrrrsessions](https://bazaar-bonzo.ovh/brrrrsessions/)
 
 ## Card
@@ -223,8 +223,8 @@ logo: radio-bonzo | RB
 tags.en: 2009 – 2010 | New York | Radio
 tags.fr: 2009 – 2010 | New York | Radio
 title: Radio Bonzo
-text.en: A French radio show from New York. [The format, my role. To come.]
-text.fr: Une radio française depuis New York. [Le format, mon rôle. À venir.]
+text.en: A French radio show from New York. **Founder and host.** [The format. To come.]
+text.fr: Une radio française depuis New York. **Fondateur et animateur.** [Le format. À venir.]
 small: [bazaar-bonzo.ovh/radiobonzo](https://bazaar-bonzo.ovh/radiobonzo/)
 
 ## Card
