@@ -60,8 +60,8 @@ text.fr: On en parle ?
 # Page: stuff-i-built
 title: Stuff I built
 icon: hammer
-intro.en: Tools I built on my own time {icon}, because I wanted them to exist. All of them are live.
-intro.fr: Des outils construits sur mon temps libre {icon}, parce que je voulais qu’ils existent. Tous sont en ligne.
+intro.en: Tools I built on my own time {icon}, because I wanted them to exist. Live ones first, work in progress after.
+intro.fr: Des outils construits sur mon temps libre {icon}, parce que je voulais qu’ils existent. Ceux en ligne d’abord, les chantiers ensuite.
 
 ## Card
 tags.en: Live | Solo build
@@ -90,6 +90,22 @@ text.fr: **Coupé volontairement :** les classements se désactivent dès qu’u
 small.en: Stack: Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
 small.fr: Outils : Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
 image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
+
+## Card
+compact: yes
+tags.en: In progress | Open-source LLM
+tags.fr: En cours | LLM open source
+title: [Project name — to come]
+text.en: [Customizing an open-source LLM: the need, the model chosen, how it is evaluated. To come.]
+text.fr: [Personnalisation d’un LLM open source : le besoin, le modèle choisi, son évaluation. À venir.]
+
+## Card
+compact: yes
+tags.en: Toolkit | Product management
+tags.fr: Boîte à outils | Product management
+title: PM toolkit
+text.en: [The product skills I use, and the ones I wrote. To come.]
+text.fr: [Les skills produit que j’utilise, et ceux que j’ai écrits. À venir.]
 
 
 # Page: freelance
@@ -167,8 +183,49 @@ text.fr: Product Manager : les fondations d’une startup, le streaming musical.
 # Page: b-sides
 title: B-Sides
 icon: moon
-intro.en: Same brain, own time {icon}. Volunteer work with Data for Good and Time for the Planet. [One sentence on why — to come.]
-intro.fr: Même cerveau, temps libre {icon}. Engagement bénévole avec Data for Good et Time for the Planet. [Une phrase sur le sens de l’engagement — à venir.]
+intro.en: Same brain, own time {icon}. Illustration, music nights and volunteer work. [One sentence on why — to come.]
+intro.fr: Même cerveau, temps libre {icon}. Illustration, soirées musicales et bénévolat. [Une phrase sur le sens de ces projets — à venir.]
+
+## Card
+compact: yes
+logo: mewi | MW
+tags.en: [years] | Illustration & publishing
+tags.fr: [années] | Illustration et édition
+title: MEWI
+text.en: An illustration and publishing project I started on the side. [What it makes, my role. To come.]
+text.fr: Un projet d’illustration et d’édition lancé à côté. [Ce qu’il produit, mon rôle. À venir.]
+small: [mewi.studio](https://mewi.studio/)
+
+## Card
+logo: die-pod-die | DP
+tags.en: 2014 – 2016 | Lyon · Paris · Montréal
+tags.fr: 2014 – 2016 | Lyon · Paris · Montréal
+title: DIE POD DIE
+text.en: Listening sessions where a full vinyl album is played start to finish on good equipment, for 40 people at most. Each session paired a well-known classic with a lesser-known contemporary record.
+text.fr: Des sessions d’écoute où un vinyle est joué en entier sur du bon matériel, devant 40 personnes au plus. Chaque session associait un classique connu à un album contemporain moins connu.
+text.en: Started in Lyon in 2014 (Le Périscope, Le Marché Gare), then Paris (Le 104) and Montréal (Centre Phi), for three years. [My role. To come.]
+text.fr: Lancé à Lyon en 2014 (Le Périscope, Le Marché Gare), puis Paris (Le 104) et Montréal (Centre Phi), pendant trois ans. [Mon rôle. À venir.]
+small: [bazaar-bonzo.ovh/diepoddie](https://bazaar-bonzo.ovh/diepoddie/)
+
+## Card
+compact: yes
+logo: brrrr-sessions | BS
+tags.en: 2011 | Paris | Playlists
+tags.fr: 2011 | Paris | Playlists
+title: Brrrr Sessions
+text.en: A free weekly playlist of about 40 minutes: a side A of standard-length tracks, a side B of long ones, some over 15 minutes. Open to guest selectors.
+text.fr: Une playlist hebdomadaire gratuite d’environ 40 minutes : une face A de morceaux au format classique, une face B de titres longs, parfois plus de 15 minutes. Ouverte aux sélections invitées.
+small: [bazaar-bonzo.ovh/brrrrsessions](https://bazaar-bonzo.ovh/brrrrsessions/)
+
+## Card
+compact: yes
+logo: radio-bonzo | RB
+tags.en: 2009 – 2010 | New York | Radio
+tags.fr: 2009 – 2010 | New York | Radio
+title: Radio Bonzo
+text.en: A French radio show from New York. [The format, my role. To come.]
+text.fr: Une radio française depuis New York. [Le format, mon rôle. À venir.]
+small: [bazaar-bonzo.ovh/radiobonzo](https://bazaar-bonzo.ovh/radiobonzo/)
 
 ## Card
 logo: data-for-good | DG

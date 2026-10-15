@@ -95,6 +95,7 @@ html[data-theme="dark"] .ava img { filter: grayscale(1) invert(1) contrast(1.1);
 .dk::after { content: attr(data-tip); position: absolute; bottom: calc(100% + 12px); left: 50%; transform: translateX(-50%); font: 500 11px/1.2 var(--mono); white-space: nowrap; padding: 4px 9px; border-radius: 999px; background: var(--text); color: var(--canvas); opacity: 0; pointer-events: none; transition: opacity 120ms var(--ease); }
 .dk:hover::after, .dk:focus-visible::after { opacity: 1; }
 .dk-label { display: none; }
+.dk-count { position: absolute; top: -6px; right: -6px; min-width: 20px; height: 20px; box-sizing: border-box; padding: 0 5px; border-radius: 999px; background: var(--accent); color: var(--on-accent); border: 2px solid var(--canvas); font: 500 10px/16px var(--mono); text-align: center; pointer-events: none; }
 .credit { display: block; margin: 0; font: 400 11px/1.4 var(--mono); color: var(--muted); text-align: center; }
 .credit a { color: var(--muted); text-decoration-color: var(--filet); text-underline-offset: 2px; }
 .credit a:hover { color: var(--text); }
@@ -167,13 +168,15 @@ html[data-page="about"] .view[data-view="about"] { display: block; }
   .ava img { width: 58px; height: 40px; }
   .name { font-size: 18px; margin-top: 14px; }
   .hl { font-size: 38px; margin-top: 18px; }
-  .dock { flex-direction: column; gap: 10px; width: 100%; max-width: 366px; padding: 10px 6px 8px; }
-  .dock-sep { display: none; }
-  .dock ul { gap: 2px; justify-content: center; width: 100%; }
-  .dock li { flex: 0 1 64px; min-width: 0; display: flex; justify-content: center; }
+  /* One row on every phone: the dock never stacks, items shrink instead. */
+  .dock { align-items: flex-start; gap: 4px; max-width: 100%; padding: 8px 6px 6px; }
+  .dock-sep { height: 40px; margin: 4px 0 0; }
+  .dock ul { gap: 0; }
+  .dock li { flex: none; width: min(56px, calc((100vw - 64px) / 6)); display: flex; justify-content: center; }
   .dk { width: 100%; height: auto; display: flex; flex-direction: column; align-items: center; gap: 4px; padding-bottom: 2px; }
-  .dk-face { width: 48px; height: 48px; }
-  .dk-label { display: block; max-width: 100%; font: 500 10px/1.2 var(--mono); color: var(--body); text-align: center; overflow-wrap: anywhere; }
+  .dk-face { width: min(48px, calc((100vw - 64px) / 6 - 6px)); height: auto; aspect-ratio: 1; flex: none; }
+  .dk-count { top: -5px; right: auto; left: calc(50% + 12px); }
+  .dk-label { display: block; max-width: 100%; font: 500 10px/1.2 var(--mono); color: var(--body); text-align: center; }
   .dk::after { display: none; }
   .page { padding: 20px 16px 48px; }
   .page-top { padding: 16px 12px 0; }
@@ -184,6 +187,12 @@ html[data-page="about"] .view[data-view="about"] { display: block; }
   .co-logo { width: 40px; height: 40px; border-radius: 10px; }
   .about { padding: 36px 16px 56px; }
   .about p { font-size: 17px; }
+}
+
+@media (max-width: 359px) {
+  .dk-count { left: calc(50% + 9px); }
+  .dk-label { font-size: 9px; }
+  .dock-sep { height: 34px; }
 }
 </style>
 </head>
@@ -219,9 +228,9 @@ html[data-page="about"] .view[data-view="about"] { display: block; }
 <div class="dock-wrap">
 <nav class="dock" id="dock" tabindex="-1" aria-label="Folders and contact" data-fr-aria-label="Dossiers et contact">
 <ul role="list">
-<li><a class="dk" href="{{ROOT}}stuff-i-built/" data-nav="stuff-i-built" data-tip="Stuff I built" aria-label="Stuff I built"><span class="dk-face"><img src="data:image/png;base64,{{DK_BUILT_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">Stuff I built</span></a></li>
-<li><a class="dk" href="{{ROOT}}freelance/" data-nav="freelance" data-tip="Freelance" aria-label="Freelance"><span class="dk-face"><img src="data:image/png;base64,{{DK_FREELANCE_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">Freelance</span></a></li>
-<li><a class="dk" href="{{ROOT}}b-sides/" data-nav="b-sides" data-tip="B-Sides" aria-label="B-Sides"><span class="dk-face"><img src="data:image/png;base64,{{DK_BSIDES_B64}}" alt=""></span><span class="dk-label" aria-hidden="true">B-Sides</span></a></li>
+<li><a class="dk" href="{{ROOT}}stuff-i-built/" data-nav="stuff-i-built" data-tip="Stuff I built · {{COUNT_STUFF_I_BUILT}}" aria-label="Stuff I built, {{COUNT_STUFF_I_BUILT}} items" data-fr-aria-label="Stuff I built, {{COUNT_STUFF_I_BUILT}} éléments"><span class="dk-face"><img src="data:image/png;base64,{{DK_BUILT_B64}}" alt=""></span><span class="dk-count" aria-hidden="true">{{COUNT_STUFF_I_BUILT}}</span><span class="dk-label" aria-hidden="true">Stuff I built</span></a></li>
+<li><a class="dk" href="{{ROOT}}freelance/" data-nav="freelance" data-tip="Freelance · {{COUNT_FREELANCE}}" aria-label="Freelance, {{COUNT_FREELANCE}} roles" data-fr-aria-label="Freelance, {{COUNT_FREELANCE}} missions"><span class="dk-face"><img src="data:image/png;base64,{{DK_FREELANCE_B64}}" alt=""></span><span class="dk-count" aria-hidden="true">{{COUNT_FREELANCE}}</span><span class="dk-label" aria-hidden="true">Freelance</span></a></li>
+<li><a class="dk" href="{{ROOT}}b-sides/" data-nav="b-sides" data-tip="B-Sides · {{COUNT_B_SIDES}}" aria-label="B-Sides, {{COUNT_B_SIDES}} projects" data-fr-aria-label="B-Sides, {{COUNT_B_SIDES}} projets"><span class="dk-face"><img src="data:image/png;base64,{{DK_BSIDES_B64}}" alt=""></span><span class="dk-count" aria-hidden="true">{{COUNT_B_SIDES}}</span><span class="dk-label" aria-hidden="true">B-Sides</span></a></li>
 </ul>
 <span class="dock-sep" aria-hidden="true"></span>
 <ul role="list">

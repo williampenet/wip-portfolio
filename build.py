@@ -308,6 +308,9 @@ def render(data):
         "{{TITLE_HOME_EN_JS}}": json.dumps(titles["en"], ensure_ascii=False),
         "{{TITLE_HOME_FR_JS}}": json.dumps(titles["fr"], ensure_ascii=False),
     }
+    # Dock badges: how many cards each folder holds, so nothing hides behind a folder icon.
+    for s in FOLDERS:
+        replacements["{{COUNT_" + s.upper().replace("-", "_") + "}}"] = str(len(data["pages"][s]["cards"]))
     page_titles = {"home": titles["en"], "about": f'{a_title["en"]} — {name}'}
     for s in FOLDERS:
         page_titles[s] = f'{one(data["pages"][s]["fields"], "title")["en"]} — {name}'
