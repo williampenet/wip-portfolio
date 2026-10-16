@@ -64,8 +64,8 @@ intro.en: Tools I built on my own time {icon}, because I wanted them to exist.
 intro.fr: Des outils construits sur mon temps libre {icon}, parce que je voulais qu’ils existent.
 
 ## Card
-tags.en: Live | Solo build
-tags.fr: En ligne | Projet solo
+tags.en: Live | Solo build | AI
+tags.fr: En ligne | Projet solo | IA
 title: Nightcrawler
 text.en: I never took the time to go through every venue’s listings in Lyon and around, and I kept missing artists I really wanted to see live.
 text.fr: Je ne prenais pas le temps de parcourir la programmation de toutes les salles de Lyon et des environs, et j’ai raté plusieurs fois des artistes que je voulais absolument voir en concert.
