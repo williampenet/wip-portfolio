@@ -85,8 +85,6 @@ text.en: I wanted a project to practise API calls and see what Streamlit can do.
 text.fr: Je cherchais un projet pour m’exercer aux appels d’API et tester ce que Streamlit permet de faire. J’étais aussi curieux de voir ce que 15 ans d’écoute Spotify diraient de moi.
 text.en: So I built this dashboard, before Spotify started showing similar all-time stats in its own app.
 text.fr: J’ai donc construit ce tableau de bord, avant que Spotify ne propose des statistiques similaires dans sa propre app.
-text.en: **Cut on purpose:** ranking charts switch themselves off when a filter is active. A Top 10 that silently excludes most of the data is misinformation dressed as a number.
-text.fr: **Coupé volontairement :** les classements se désactivent dès qu’un filtre est actif. Un Top 10 qui exclut en silence l’essentiel des données, c’est de la désinformation déguisée en chiffre.
 small.en: Stack: full Spotify data export loaded into Supabase (PostgreSQL), recent plays synced from the Spotify API with n8n · Streamlit dashboard with pandas and Plotly, hosted on Streamlit Community Cloud · [Live](https://spotiboard.streamlit.app) · [GitHub](https://github.com/williampenet/spotiboard)
 small.fr: Outils : export complet des données Spotify chargé dans Supabase (PostgreSQL), écoutes récentes synchronisées depuis l’API Spotify avec n8n · tableau de bord Streamlit avec pandas et Plotly, hébergé sur Streamlit Community Cloud · [En ligne](https://spotiboard.streamlit.app) · [GitHub](https://github.com/williampenet/spotiboard)
 image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
