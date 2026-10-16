@@ -126,6 +126,8 @@ title: Bedrock Streaming
 text: Freelance Senior Product Manager.
 text.en: I led the two-way integration between our broadcaster clients’ CRMs and the streaming platform, from defining the use cases to setting up real-time data feeds.
 text.fr: J’ai piloté l’intégration bidirectionnelle entre les CRM de nos clients diffuseurs et la plateforme de streaming, de la définition des cas d’usage à la mise en place des flux de données en temps réel.
+small.en: Product stack: {logo:claude|Claude}, {logo:apachesuperset|Superset}, {logo:atlassian|Atlassian}, Airship, Braze, Salesforce Marketing Cloud
+small.fr: Outils produit : {logo:claude|Claude}, {logo:apachesuperset|Superset}, {logo:atlassian|Atlassian}, Airship, Braze, Salesforce Marketing Cloud
 
 ## Card
 logo: interflora | I
