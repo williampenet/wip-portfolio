@@ -109,8 +109,6 @@ text.en: {logo:tastecode|**[TasteCode](https://tastecode.dev/)**}: the desktop h
 text.fr: {logo:tastecode|**[TasteCode](https://tastecode.dev/)**} : l’espace de travail de mes agents de code, avec un Design Mode qui mène une page du brief à un aperçu en ligne relu, à toutes les tailles d’écran.
 text.en: {logo:impeccable|**[Impeccable](https://github.com/pbakaus/impeccable)**}: a shared design vocabulary for my agents (critique, audit, polish) that catches the usual tells of AI-made interfaces before they ship. This site was shaped with both.
 text.fr: {logo:impeccable|**[Impeccable](https://github.com/pbakaus/impeccable)**} : un vocabulaire de design commun avec mes agents (critique, audit, polish), qui repère les tics des interfaces faites par IA avant la mise en ligne. Ce site a été travaillé avec les deux.
-facts.en: “The client asks for X, but I’m not sure of the need” → incoming-request-advisor, then problem-framing-canvas | “This idea looks great: take it apart” → strategy-red-team, then identify-assumptions-existing | “What must we learn before deciding?” → prioritize-assumptions, then pol-probe-advisor | “How do we check the problem with customers?” → discovery-interview-prep, then opportunity-solution-tree
-facts.fr: « Le client demande X, mais je ne suis pas sûr du besoin » → incoming-request-advisor, puis problem-framing-canvas | « Cette idée paraît séduisante : démonte-la » → strategy-red-team, puis identify-assumptions-existing | « Qu’est-ce qu’on doit apprendre avant de décider ? » → prioritize-assumptions, puis pol-probe-advisor | « Comment vérifier le problème auprès des clients ? » → discovery-interview-prep, puis opportunity-solution-tree
 
 
 # Page: freelance
