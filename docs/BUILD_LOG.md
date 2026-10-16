@@ -51,3 +51,5 @@
 | 2026-10-16 | agent:orchestrator | All applied (EN and FR). `build.py`: the home headline no longer inserts the hammer icon, and a headline without `|` renders on one line. LinkedIn Sales Navigator and Lemlist have no Simple Icons mark (LinkedIn's was removed from the set): text only. Playwright at 375 and 1280 px, EN and FR, on home, Career and Stuff I built: no horizontal scroll, no page error |
 | 2026-10-16 | human:william | Mister Auto × Stellantis: remove the "21 countries" tag, keep it in the description |
 | 2026-10-16 | agent:orchestrator | Tag removed (EN and FR); the description still says 21 countries |
+| 2026-10-16 | human:william | Show his logo in colour on the home, without greyscale and without the circle |
+| 2026-10-16 | agent:orchestrator | Home logo: greyscale/invert filters and the round frame removed; shown in its own colours at 140 px wide (110 px on mobile), same in both themes. Playwright at 375 and 1280 px, light and dark: no horizontal scroll, no page error |

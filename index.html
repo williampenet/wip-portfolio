@@ -74,9 +74,8 @@ html:not(.js) .needs-js { display: none !important; }
 .pill-link:hover { background: var(--surface-alt); }
 
 .hero { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 32px 0 40px; }
-.ava { width: 112px; height: 112px; border-radius: 50%; background: var(--surface-alt); border: 1px solid var(--filet); display: grid; place-items: center; overflow: hidden; }
-.ava img { width: 74px; height: 50px; object-fit: contain; filter: grayscale(1) contrast(1.15); transition: filter 320ms var(--ease); }
-html[data-theme="dark"] .ava img { filter: grayscale(1) invert(1) contrast(1.1); }
+.ava { display: grid; place-items: center; }
+.ava img { width: 140px; height: auto; display: block; }
 .name { margin: 18px 0 0; font-size: 21px; font-weight: 500; letter-spacing: -.005em; }
 .hl { margin: 26px 0 0; font-size: 70px; line-height: 1.04; font-weight: 500; letter-spacing: -.035em; text-wrap: balance; }
 .hl-icon { display: inline-block; width: .74em; height: .74em; vertical-align: -.04em; margin: 0 .06em; color: var(--accent); }
@@ -168,8 +167,7 @@ img.tool-logo { border-radius: 3px; }
 @media (max-width: 679px) {
   .home { padding: 16px 12px 12px; }
   .hero { padding: 24px 4px 28px; }
-  .ava { width: 88px; height: 88px; }
-  .ava img { width: 58px; height: 40px; }
+  .ava img { width: 110px; }
   .name { font-size: 18px; margin-top: 14px; }
   .hl { font-size: 38px; margin-top: 18px; }
   /* One row on every phone: the dock never stacks, items shrink instead. */
