@@ -215,27 +215,17 @@ text.fr: Lancé à Lyon en 2014 (Le Périscope, Le Marché Gare), puis Paris (Le
 small: [bazaar-bonzo.ovh/diepoddie](https://bazaar-bonzo.ovh/diepoddie/)
 
 ## Card
-compact: yes
-logo: brrrr-sessions | BS
-tags.en: 2011 | Paris | Playlists
-tags.fr: 2011 | Paris | Playlists
-title: Brrrr Sessions
-text.en: A free weekly playlist of about 40 minutes: a side A of standard-length tracks, a side B of long ones, some over 15 minutes. Open to guest selectors. **Founder and host.**
-text.fr: Une playlist hebdomadaire gratuite d’environ 40 minutes : une face A de morceaux au format classique, une face B de titres longs, parfois plus de 15 minutes. Ouverte aux sélections invitées. **Fondateur et animateur.**
-small: [bazaar-bonzo.ovh/brrrrsessions](https://bazaar-bonzo.ovh/brrrrsessions/)
-
-## Card
 logo: data-for-good | DG
-tags.en: [years] | Volunteer
-tags.fr: [années] | Bénévole
+tags.en: 2024 – now | Volunteer
+tags.fr: 2024 – aujourd’hui | Bénévole
 title: Data for Good
-text.en: [The project, my role, what changed. To come.]
-text.fr: [Le projet, mon rôle, ce qui a changé. À venir.]
+text.en: Volunteer product manager for two years. In 2026 I’m working on an electoral mapping project that helps associations and movements bring persistent non-voters back to the polls.
+text.fr: Product manager bénévole depuis deux ans. En 2026, je travaille sur un projet de cartographie électorale qui aide les associations et les mouvements à faire revenir aux urnes les populations abstentionnistes.
 
 ## Card
 logo: time-for-the-planet | TP
-tags.en: [years] | Volunteer
-tags.fr: [années] | Bénévole
+tags.en: 2023 – now | Volunteer
+tags.fr: 2023 – aujourd’hui | Bénévole
 title: Time for the Planet
-text.en: [The project, my role, what changed. To come.]
-text.fr: [Le projet, mon rôle, ce qui a changé. À venir.]
+text.en: An international initiative that finds and invests in companies whose work should cut CO₂ emissions. I’m one of the reviewers of the hundreds of applications it receives every year.
+text.fr: Une initiative internationale qui repère des entreprises dont l’activité doit réduire les émissions de CO₂ et investit dans elles. Je fais partie des évaluateurs des centaines de candidatures reçues chaque année.
