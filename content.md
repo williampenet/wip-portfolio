@@ -67,14 +67,14 @@ intro.fr: Des outils construits sur mon temps libre {icon}, parce que je voulais
 tags.en: Live | Solo build
 tags.fr: En ligne | Projet solo
 title: Nightcrawler
-text.en: Concert discovery that reads your taste against venue listings.
-text.fr: La découverte de concerts qui lit un goût musical face aux programmations des salles.
-text.en: Type in the artists you care about, or connect Spotify and let MusicBrainz fill in the styles. A Mistral model scores each concert and sorts it into Must Not Miss, For You or Discovery. State lives in the browser.
-text.fr: On saisit ses artistes, ou on connecte Spotify et MusicBrainz complète les styles. Un modèle Mistral note chaque concert et le range dans Must Not Miss, For You ou Discovery. L’état vit dans le navigateur.
-text.en: **Cut on purpose:** ticketing, social features and accounts. It had to be useful on the first visit, with nothing to sign up for.
-text.fr: **Coupé volontairement :** billetterie, fonctions sociales et comptes. L’outil devait servir dès la première visite, sans inscription.
-small.en: Stack: Mistral, Spotify, MusicBrainz · [williampenet.github.io/nightcrawler](https://williampenet.github.io/nightcrawler/)
-small.fr: Outils : Mistral, Spotify, MusicBrainz · [williampenet.github.io/nightcrawler](https://williampenet.github.io/nightcrawler/)
+text.en: I never took the time to go through every venue’s listings in Lyon and around, and I kept missing artists I really wanted to see live.
+text.fr: Je ne prenais pas le temps de parcourir la programmation de toutes les salles de Lyon et des environs, et j’ai raté plusieurs fois des artistes que je voulais absolument voir en concert.
+text.en: So I built a personal concert recommender fed by my own taste: the artists from my Spotify account, plus a like / not-for-me button on every concert. A Mistral model scores each concert and sorts it into Must Not Miss, For You or Discovery, with a one-line reason.
+text.fr: J’ai donc construit une app perso de recommandation de concerts, nourrie par mes goûts : les artistes de mon compte Spotify et un bouton « j’aime / pas pour moi » sur chaque concert. Un modèle Mistral note chaque concert et le range dans Must Not Miss, For You ou Discovery, avec une raison en une phrase.
+text.en: **Cut on purpose:** accounts, ticketing and social features. It is built for one person; friends get a shared link, with nothing to sign up for.
+text.fr: **Coupé volontairement :** comptes, billetterie et fonctions sociales. L’app est faite pour une personne ; les amis reçoivent un lien partagé, sans inscription.
+small.en: Stack: Python pipeline run daily on GitHub Actions, reading venue websites, OpenStreetMap and Ticketmaster · Mistral Small 3.2 for taste and Gemma 4 for agenda pages, both on Scaleway in Paris · Scaleway serverless PostgreSQL for likes and verdicts · static web app on GitHub Pages · [Live](https://williampenet.github.io/nightcrawler/) · [GitHub](https://github.com/williampenet/nightcrawler)
+small.fr: Outils : pipeline Python lancé chaque jour par GitHub Actions, qui lit les sites des salles, OpenStreetMap et Ticketmaster · Mistral Small 3.2 pour le goût et Gemma 4 pour les pages d’agenda, tous deux chez Scaleway à Paris · PostgreSQL serverless Scaleway pour les avis et les verdicts · app web statique sur GitHub Pages · [En ligne](https://williampenet.github.io/nightcrawler/) · [GitHub](https://github.com/williampenet/nightcrawler)
 image: screens/nightcrawler.jpg | https://williampenet.github.io/nightcrawler/
 
 ## Card
