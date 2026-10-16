@@ -204,19 +204,6 @@ text.fr: Les mots que les enfants déforment en apprenant à parler sont souvent
 small: [mewi.studio](https://mewi.studio/)
 
 ## Card
-logo: die-pod-die | DP
-tags.en: 2014 – 2016 | Lyon · Paris · Montréal
-tags.fr: 2014 – 2016 | Lyon · Paris · Montréal
-title: DIE POD DIE
-text.en: In the shuffle-and-skip years of the iPod, I asked people to do the opposite: sit down and do nothing but listen, for two 40-minute stretches. Each session played a well-known classic and a lesser-known contemporary album in full on vinyl, on good equipment, for 40 people at most. Vinyl listening bars have made this common since; back then it was an odd idea.
-text.fr: À l’époque du zapping et de l’iPod Shuffle, je demandais aux gens l’inverse : s’asseoir et ne rien faire d’autre qu’écouter, deux fois quarante minutes. Chaque session faisait entendre en entier, sur vinyle et sur du bon matériel, un classique connu et un album contemporain moins connu, devant 40 personnes au plus. Les bars d’écoute ont depuis rendu la pratique courante ; à l’époque, l’idée était insolite.
-text.en: Guests included Brigitte Fontaine and Areski Belkacem, Arthur H, Lee Ranaldo and Étienne Jaumet.
-text.fr: Parmi les invités : Brigitte Fontaine et Areski Belkacem, Arthur H, Lee Ranaldo et Étienne Jaumet.
-text.en: Started in Lyon in 2014 (Le Périscope, Le Marché Gare), then Paris (Le 104) and Montréal (Centre Phi), for three years. **Founder and host.**
-text.fr: Lancé à Lyon en 2014 (Le Périscope, Le Marché Gare), puis Paris (Le 104) et Montréal (Centre Phi), pendant trois ans. **Fondateur et animateur.**
-small: [bazaar-bonzo.ovh/diepoddie](https://bazaar-bonzo.ovh/diepoddie/)
-
-## Card
 logo: data-for-good | DG
 tags.en: 2024 – now | Volunteer
 tags.fr: 2024 – aujourd’hui | Bénévole
@@ -231,3 +218,16 @@ tags.fr: 2023 – aujourd’hui | Bénévole
 title: Time for the Planet
 text.en: An international initiative that finds and invests in companies whose work should cut CO₂ emissions. I’m one of the reviewers of the hundreds of applications it receives every year.
 text.fr: Une initiative internationale qui repère des entreprises dont l’activité doit réduire les émissions de CO₂ et investit dans elles. Je fais partie des évaluateurs des centaines de candidatures reçues chaque année.
+
+## Card
+logo: die-pod-die | DP
+tags.en: 2014 – 2016 | Lyon · Paris · Montréal
+tags.fr: 2014 – 2016 | Lyon · Paris · Montréal
+title: DIE POD DIE
+text.en: In the shuffle-and-skip years of the iPod, I asked people to do the opposite: sit down and do nothing but listen, for two 40-minute stretches. Each session played a well-known classic and a lesser-known contemporary album in full on vinyl, on good equipment, for 40 people at most. Vinyl listening bars have made this common since; back then it was an odd idea.
+text.fr: À l’époque du zapping et de l’iPod Shuffle, je demandais aux gens l’inverse : s’asseoir et ne rien faire d’autre qu’écouter, deux fois quarante minutes. Chaque session faisait entendre en entier, sur vinyle et sur du bon matériel, un classique connu et un album contemporain moins connu, devant 40 personnes au plus. Les bars d’écoute ont depuis rendu la pratique courante ; à l’époque, l’idée était insolite.
+text.en: Guests included Brigitte Fontaine and Areski Belkacem, Arthur H, Lee Ranaldo and Étienne Jaumet.
+text.fr: Parmi les invités : Brigitte Fontaine et Areski Belkacem, Arthur H, Lee Ranaldo et Étienne Jaumet.
+text.en: Started in Lyon in 2014 (Le Périscope, Le Marché Gare), then Paris (Le 104) and Montréal (Centre Phi), for three years. **Founder and host.**
+text.fr: Lancé à Lyon en 2014 (Le Périscope, Le Marché Gare), puis Paris (Le 104) et Montréal (Centre Phi), pendant trois ans. **Fondateur et animateur.**
+small: [bazaar-bonzo.ovh/diepoddie](https://bazaar-bonzo.ovh/diepoddie/)

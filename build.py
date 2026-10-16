@@ -295,6 +295,23 @@ def render_card(entries):
     return f'<article class="{cls}">{body}{media}</article>'
 
 
+def check_card_order(slug, page):
+    """Cards dated in their first tag ("2023 – now", "2014 – 2016") must run most recent first."""
+    prev = None
+    for entries in page["cards"]:
+        tags = one(entries, "tags")
+        first = tags["en"].split("|")[0] if tags else ""
+        years = re.findall(r"\b(?:19|20)\d{2}\b", first)
+        if not years:
+            continue  # undated card (project, toolkit): no constraint
+        end = 9999 if re.search(r"\bnow\b", first) else int(years[-1])
+        key = (end, int(years[0]))
+        if prev and key > prev[0]:
+            raise ContentError(f"content.md: page '{slug}': '{one(entries, 'title')['en']}' ({first.strip()}) "
+                               f"must come before '{prev[1]}': cards run most recent first")
+        prev = (key, one(entries, "title")["en"])
+
+
 def render_folder(slug, page):
     f = page["fields"]
     title = one(f, "title", required=True)
@@ -320,6 +337,8 @@ def render(data):
     missing = [s for s in FOLDERS if s not in data["pages"]]
     if missing:
         raise ContentError(f"content.md: missing page section(s): {', '.join(missing)}")
+    for s in FOLDERS:
+        check_card_order(s, data["pages"][s])
 
     name = raw(home, "name") or "William Pénet"
     head = one(home, "headline", required=True)
