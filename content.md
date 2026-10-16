@@ -196,11 +196,11 @@ intro.fr: Même cerveau, temps libre {icon}. Illustration, soirées musicales et
 ## Card
 compact: yes
 logo: mewi | MW
-tags.en: 2024 – now | Illustration & publishing
-tags.fr: 2024 – aujourd’hui | Illustration et édition
+tags.en: 2024 – now | Stories, games, objects
+tags.fr: 2024 – aujourd’hui | Récits, jeux, objets
 title: MEWI
-text.en: An illustration and publishing project I started on the side. [What it makes, my role. To come.]
-text.fr: Un projet d’illustration et d’édition lancé à côté. [Ce qu’il produit, mon rôle. À venir.]
+text.en: The words children get wrong while learning to speak are often better than the right ones. MEWI collects them and explores their creative side through stories, games and objects. **Founder.**
+text.fr: Les mots que les enfants déforment en apprenant à parler sont souvent plus beaux que les vrais. MEWI les recueille et explore leur potentiel créatif à travers des récits, des jeux et des objets. **Fondateur.**
 small: [mewi.studio](https://mewi.studio/)
 
 ## Card
@@ -208,8 +208,10 @@ logo: die-pod-die | DP
 tags.en: 2014 – 2016 | Lyon · Paris · Montréal
 tags.fr: 2014 – 2016 | Lyon · Paris · Montréal
 title: DIE POD DIE
-text.en: Listening sessions where a full vinyl album is played start to finish on good equipment, for 40 people at most. Each session paired a well-known classic with a lesser-known contemporary record.
-text.fr: Des sessions d’écoute où un vinyle est joué en entier sur du bon matériel, devant 40 personnes au plus. Chaque session associait un classique connu à un album contemporain moins connu.
+text.en: In the shuffle-and-skip years of the iPod, I asked people to do the opposite: sit down and do nothing but listen, for two 40-minute stretches. Each session played a well-known classic and a lesser-known contemporary album in full on vinyl, on good equipment, for 40 people at most. Vinyl listening bars have made this common since; back then it was an odd idea.
+text.fr: À l’époque du zapping et de l’iPod Shuffle, je demandais aux gens l’inverse : s’asseoir et ne rien faire d’autre qu’écouter, deux fois quarante minutes. Chaque session faisait entendre en entier, sur vinyle et sur du bon matériel, un classique connu et un album contemporain moins connu, devant 40 personnes au plus. Les bars d’écoute ont depuis rendu la pratique courante ; à l’époque, l’idée était insolite.
+text.en: Guests included Brigitte Fontaine and Areski Belkacem, Arthur H, Lee Ranaldo and Étienne Jaumet.
+text.fr: Parmi les invités : Brigitte Fontaine et Areski Belkacem, Arthur H, Lee Ranaldo et Étienne Jaumet.
 text.en: Started in Lyon in 2014 (Le Périscope, Le Marché Gare), then Paris (Le 104) and Montréal (Centre Phi), for three years. **Founder and host.**
 text.fr: Lancé à Lyon en 2014 (Le Périscope, Le Marché Gare), puis Paris (Le 104) et Montréal (Centre Phi), pendant trois ans. **Fondateur et animateur.**
 small: [bazaar-bonzo.ovh/diepoddie](https://bazaar-bonzo.ovh/diepoddie/)
