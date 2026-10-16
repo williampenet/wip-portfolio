@@ -152,6 +152,38 @@ def icon_svg(name, cls):
             f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{ICONS[name]}</svg></span>')
 
 
+# Tool logos: `{logo:slug|Name}` in content.md -> brand-coloured logo glued to the tool name.
+# Files in assets/tools/<slug>.svg (Simple Icons, CC0; see assets/tools/NOTICE.md).
+DARK_SURFACE = "#1E1B23"  # --surface in the dark theme (src/index.template.html)
+
+
+def _luminance(hexv):
+    def ch(c):
+        c = c / 255
+        return c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+    r, g, b = (int(hexv.lstrip("#")[i:i + 2], 16) for i in (0, 2, 4))
+    return 0.2126 * ch(r) + 0.7152 * ch(g) + 0.0722 * ch(b)
+
+
+def _contrast(a, b):
+    la, lb = sorted((_luminance(a), _luminance(b)), reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+def tool_logo(m):
+    slug, name = m.group(1), m.group(2).strip()
+    f = ROOT / "assets" / "tools" / f"{slug}.svg"
+    if not f.exists():
+        raise ContentError(f"content.md: tool logo not found: assets/tools/{slug}.svg")
+    svg = f.read_text(encoding="utf-8")
+    fill = re.search(r'fill="(#[0-9A-Fa-f]{6})"', svg).group(1)
+    path = re.search(r'<path d="([^"]+)"', svg).group(1)
+    # A near-black logo would vanish on the dark theme: it takes the text colour there instead.
+    cls = "tool-logo lo" if _contrast(fill, DARK_SURFACE) < 2 else "tool-logo"
+    return (f'<span class="tool"><svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true" '
+            f'focusable="false" style="--brand:{fill}"><path d="{path}"/></svg>{name}</span>')
+
+
 def fmt(text, lang, icon=None):
     """Inline formatting: escape, French spacing, **bold**, links, [placeholders], {icon}."""
     s = htmlmod.escape(text, quote=False)
@@ -174,6 +206,7 @@ def fmt(text, lang, icon=None):
 
     s = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, s)
     s = re.sub(r"\[([^\]]+)\](?!\()", r'<span class="placeholder">[\1]</span>', s)
+    s = re.sub(r"\{logo:([a-z0-9]+)\|([^}]+)\}", tool_logo, s)
     if "{icon}" in s:
         if not icon:
             raise ContentError("content.md: {icon} used but no 'icon:' set for this page")

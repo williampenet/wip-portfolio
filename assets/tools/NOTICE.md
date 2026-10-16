@@ -1,0 +1,1 @@
+Tool logos from Simple Icons v16.35.0 (CC0-1.0), https://github.com/simple-icons/simple-icons, with each brand's own colour from its data file. Brands remain trademarks of their owners; see the Simple Icons disclaimer: https://github.com/simple-icons/simple-icons/blob/develop/DISCLAIMER.md
