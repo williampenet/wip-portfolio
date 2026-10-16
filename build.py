@@ -172,9 +172,16 @@ def _contrast(a, b):
 
 def tool_logo(m):
     slug, name = m.group(1), m.group(2).strip()
-    f = ROOT / "assets" / "tools" / f"{slug}.svg"
+    d = ROOT / "assets" / "tools"
+    png, f = d / f"{slug}.png", d / f"{slug}.svg"
+    if png.exists() or (f.exists() and not re.search(r'<svg[^>]*\sfill="#', f.read_text(encoding="utf-8"))):
+        # A full-colour icon (app icon, favicon) rather than a one-path brand mark: inline it as an image.
+        src = png if png.exists() else f
+        mime = "image/png" if src.suffix == ".png" else "image/svg+xml"
+        uri = f"data:{mime};base64,{base64.b64encode(src.read_bytes()).decode('ascii')}"
+        return f'<span class="tool"><img class="tool-logo" src="{uri}" alt="">{name}</span>'
     if not f.exists():
-        raise ContentError(f"content.md: tool logo not found: assets/tools/{slug}.svg")
+        raise ContentError(f"content.md: tool logo not found: assets/tools/{slug}.svg or .png")
     svg = f.read_text(encoding="utf-8")
     fill = re.search(r'fill="(#[0-9A-Fa-f]{6})"', svg).group(1)
     path = re.search(r'<path d="([^"]+)"', svg).group(1)
