@@ -346,8 +346,7 @@ def render(data):
     h_fr = [x.strip() for x in head["fr"].split("|", 1)]
     line1 = inline({"en": h_en[0], "fr": h_fr[0]})
     line2 = inline({"en": h_en[1] if len(h_en) > 1 else "", "fr": h_fr[1] if len(h_fr) > 1 else ""})
-    headline = (f'<span class="sr">{htmlmod.escape(name)}, </span>{line1} '
-                f'{icon_svg("hammer", "hl-icon")}<br>{line2}')
+    headline = f'<span class="sr">{htmlmod.escape(name)}, </span>{line1}' + (f'<br>{line2}' if line2 else '')
 
     a_title = one(about, "title") or {"en": "About", "fr": "À propos"}
     about_h1 = f'<h1 class="sr" id="page-title-about" tabindex="-1">{inline(a_title)}</h1>'

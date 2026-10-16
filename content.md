@@ -35,9 +35,9 @@ title.fr: William Pénet — Senior Product Builder freelance
 description.en: William Pénet, Senior Product Builder in freelance. Ten years of product, AI shipped in production, side projects live.
 description.fr: William Pénet, Senior Product Builder en freelance. Dix ans de produit, l’IA livrée en production, des projets personnels en ligne.
 name: William Pénet
-// Le | marque le retour à la ligne ; l'icône marteau se place juste avant.
-headline.en: Senior Product Builder | freelance, who builds with AI.
-headline.fr: Senior Product Builder | freelance, qui construit avec l’IA.
+// Un | dans le titre marque un retour à la ligne (facultatif).
+headline.en: Freelancing Senior Product Builder
+headline.fr: Product Builder Senior freelance
 
 
 # About
@@ -73,8 +73,6 @@ text.en: I never took the time to go through every venue’s listings in Lyon an
 text.fr: Je ne prenais pas le temps de parcourir la programmation de toutes les salles de Lyon et des environs, et j’ai raté plusieurs fois des artistes que je voulais absolument voir en concert.
 text.en: So I built a personal concert recommender fed by my own taste: the artists from my Spotify account, plus a like / not-for-me button on every concert. A Mistral model scores each concert and sorts it into Must Not Miss, For You or Discovery, with a one-line reason.
 text.fr: J’ai donc construit une app perso de recommandation de concerts, nourrie par mes goûts : les artistes de mon compte Spotify et un bouton « j’aime / pas pour moi » sur chaque concert. Un modèle Mistral note chaque concert et le range dans Must Not Miss, For You ou Discovery, avec une raison en une phrase.
-text.en: **Cut on purpose:** accounts, ticketing and social features. It is built for one person; friends get a shared link, with nothing to sign up for.
-text.fr: **Coupé volontairement :** comptes, billetterie et fonctions sociales. L’app est faite pour une personne ; les amis reçoivent un lien partagé, sans inscription.
 small.en: Stack: {logo:python|Python} pipeline run daily on {logo:githubactions|GitHub Actions}, reading venue websites, {logo:openstreetmap|OpenStreetMap} and Ticketmaster · {logo:mistralai|Mistral Small 3.2} for taste and Gemma 4 for agenda pages, both on {logo:scaleway|Scaleway} in Paris · serverless {logo:postgresql|PostgreSQL} on Scaleway for likes and verdicts · static web app on {logo:github|GitHub Pages}
 small.en: [Live](https://williampenet.github.io/nightcrawler/) · [GitHub](https://github.com/williampenet/nightcrawler)
 small.fr: Outils : pipeline {logo:python|Python} lancé chaque jour par {logo:githubactions|GitHub Actions}, qui lit les sites des salles, {logo:openstreetmap|OpenStreetMap} et Ticketmaster · {logo:mistralai|Mistral Small 3.2} pour le goût et Gemma 4 pour les pages d’agenda, tous deux chez {logo:scaleway|Scaleway} à Paris · {logo:postgresql|PostgreSQL} serverless chez Scaleway pour les avis et les verdicts · app web statique sur {logo:github|GitHub Pages}
@@ -99,8 +97,6 @@ image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
 tags.en: Toolkit | Product | Design
 tags.fr: Boîte à outils | Produit | Design
 title: Toolkit
-text.en: The agent skills I reach for, picked by the question I need answered.
-text.fr: Les skills d’agent que j’utilise, choisis selon la question à trancher.
 text.en: {logo:github|**[Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills)**} by Dean Peters: to separate what a client asks for from what they actually need, prepare discovery interviews and pick the cheapest probe before building anything.
 text.fr: {logo:github|**[Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills)**} de Dean Peters : pour distinguer ce qu’un client demande de ce dont il a vraiment besoin, préparer les entretiens de discovery et choisir le test le moins coûteux avant de construire quoi que ce soit.
 text.en: {logo:github|**[PM Skills](https://github.com/phuryn/pm-skills)**} by Paweł Huryn: to red-team an idea that looks too good, rank the assumptions it rests on and map what we learn into an opportunity solution tree.
@@ -123,18 +119,19 @@ logo: bedrock | B
 tags.en: 2025 – now | Streaming
 tags.fr: 2025 – aujourd’hui | Streaming
 title: Bedrock Streaming
-text: Freelance Senior Product Manager.
-text.en: I led the two-way integration between our broadcaster clients’ CRMs and the streaming platform, from defining the use cases to setting up real-time data feeds.
-text.fr: J’ai piloté l’intégration bidirectionnelle entre les CRM de nos clients diffuseurs et la plateforme de streaming, de la définition des cas d’usage à la mise en place des flux de données en temps réel.
+text: Freelance Senior Product Manager
+text.en: I lead the two-way integration between our broadcaster clients’ CRMs and the streaming platform, from defining the use cases to setting up real-time data feeds.
+text.fr: Je pilote l’intégration bidirectionnelle entre les CRM de nos clients diffuseurs et la plateforme de streaming, de la définition des cas d’usage à la mise en place des flux de données en temps réel.
 small.en: Product stack: {logo:claude|Claude}, {logo:apachesuperset|Superset}, {logo:atlassian|Atlassian}, Airship, Braze, Salesforce Marketing Cloud
 small.fr: Outils produit : {logo:claude|Claude}, {logo:apachesuperset|Superset}, {logo:atlassian|Atlassian}, Airship, Braze, Salesforce Marketing Cloud
 
 ## Card
 logo: interflora | I
-tags: 2024 – 2025 | Data
+tags: 2024 – 2025 | Retail
 title: Interflora
-text.en: Data Product Manager. I automated sentiment analysis of 40k+ monthly customer comments with Google Gemini 2.5 Flash.
-text.fr: Data Product Manager. J’ai automatisé l’analyse de sentiment de plus de 40 000 commentaires clients par mois avec Google Gemini 2.5 Flash.
+text: Data Product Manager
+text.en: I automated sentiment analysis of 40k+ monthly customer comments with Google Gemini 2.5 Flash.
+text.fr: J’ai automatisé l’analyse de sentiment de plus de 40 000 commentaires clients par mois avec Google Gemini 2.5 Flash.
 text.en: Feedback came in through NPS, {logo:trustpilot|Trustpilot}, {logo:hotjar|Hotjar}, {logo:zendesk|Zendesk} and social, in several languages. The CX team tagged it by hand, so insights landed late and read differently from one business unit to the next.
 text.fr: Les retours arrivaient par le NPS, {logo:trustpilot|Trustpilot}, {logo:hotjar|Hotjar}, {logo:zendesk|Zendesk} et les réseaux, en plusieurs langues. L’équipe CX les classait à la main : les enseignements arrivaient tard et se lisaient différemment d’une BU à l’autre.
 text.en: Every comment is classified twice; disagreements go to a human. **I chose to build in-house** so we could change the prompt daily on our own data instead of waiting for a vendor’s roadmap.
@@ -150,16 +147,20 @@ logo: systhen | S
 tags.en: 2021 – 2024 | B2B SaaS
 tags.fr: 2021 – 2024 | SaaS B2B
 title: Systhen
-text.en: Group CMO & Product Marketing Manager: digital acquisition, {logo:hubspot|HubSpot}, Odoo CRM, 500+ qualified leads a year.
-text.fr: Group CMO & Product Marketing Manager : acquisition digitale, {logo:hubspot|HubSpot}, Odoo CRM, plus de 500 leads qualifiés par an.
+text: Digital Marketing Manager
+text.en: I joined to gain marketing experience, and designed and ran the whole digital marketing engine that took this SME from zero to 500+ qualified leads a year.
+text.fr: Je suis venu y chercher une expérience en marketing, et j’ai conçu et animé toute la machine de marketing digital qui a fait passer cette PME de zéro à plus de 500 leads qualifiés par an.
+small.en: Stack: {logo:hubspot|HubSpot}, Odoo CRM, LinkedIn Sales Navigator, Lemlist
+small.fr: Outils : {logo:hubspot|HubSpot}, Odoo CRM, LinkedIn Sales Navigator, Lemlist
 
 ## Card
 logo: mister-auto | MA
 tags.en: 2019 – 2021 | E-commerce | 21 countries
 tags.fr: 2019 – 2021 | E-commerce | 21 pays
 title: Mister Auto × Stellantis
-text.en: Product Manager & CRO Lead. I rolled out Algolia search across 21 countries and 12 partner sites.
-text.fr: Product Manager & CRO Lead. J’ai déployé la recherche Algolia sur 21 pays et 12 sites partenaires.
+text: Product Manager & CRO Lead
+text.en: I rolled out Algolia search across 21 countries and 12 partner sites.
+text.fr: J’ai déployé la recherche Algolia sur 21 pays et 12 sites partenaires.
 text.en: Searches kept returning nothing. Not for lack of stock: a pro types a part number, a semi-pro types a brand, a consumer types “front brake pads for my 2008 Clio”. The search bar treated all three the same way.
 text.fr: Les recherches ne renvoyaient rien. Pas faute de stock : un pro tape une référence, un semi-pro une marque, un particulier « plaquettes de frein avant pour ma Clio de 2008 ». La barre de recherche traitait les trois de la même façon.
 text.en: Multi-attribute indexing, synonyms built from real search logs, continuous A/B testing. **I kept humans in the loop on vocabulary**: technical part names don’t survive machine-made synonyms without someone who knows the trade.
@@ -175,16 +176,20 @@ logo: rocket-labs | RL
 tags.en: 2018 – 2019 | Consulting
 tags.fr: 2018 – 2019 | Conseil
 title: Rocket Labs
-text.en: Product Owner consultant on complex B2B projects.
-text.fr: Consultant PO sur des projets B2B complexes.
+text.en: Product Owner consultant
+text.fr: Consultant Product Owner
+text.en: Complex B2B projects for Airbus Helicopters, Crédit Agricole and RATP.
+text.fr: Des projets B2B complexes pour Airbus Helicopters, le Crédit Agricole et la RATP.
 
 ## Card
 compact: yes
 logo: 1d-lab | 1D
 tags: 2015 – 2018 | Startup
 title: 1D Lab
-text.en: Product Manager: startup foundations, music streaming.
-text.fr: Product Manager : les fondations d’une startup, le streaming musical.
+text.en: First Product Manager
+text.fr: Premier Product Manager
+text.en: A startup set on overturning how independent musicians get paid, with a dedicated streaming platform and a fairer business model.
+text.fr: Une startup qui entendait bouleverser la rémunération des artistes indépendants, avec une plateforme de streaming dédiée et un modèle économique plus équitable.
 
 
 # Page: b-sides
