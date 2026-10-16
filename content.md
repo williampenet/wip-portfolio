@@ -190,8 +190,8 @@ text.fr: Product Manager : les fondations d’une startup, le streaming musical.
 # Page: b-sides
 title: B-Sides
 icon: moon
-intro.en: Same brain, own time {icon}. Illustration, music nights and volunteer work. [One sentence on why — to come.]
-intro.fr: Même cerveau, temps libre {icon}. Illustration, soirées musicales et bénévolat. [Une phrase sur le sens de ces projets — à venir.]
+intro.en: WiP applies to my own time too {icon}! Here’s a glimpse of the B-Sides projects I’m working on, or have worked on.
+intro.fr: WiP s’applique aussi à mon temps libre {icon} ! Voici un aperçu des projets B-Sides sur lesquels je travaille, ou j’ai travaillé.
 
 ## Card
 compact: yes
