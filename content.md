@@ -92,12 +92,21 @@ small.fr: Outils : Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.
 image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
 
 ## Card
-compact: yes
-tags.en: Toolkit | Product management
-tags.fr: Boîte à outils | Product management
-title: PM toolkit
-text.en: [The product skills I use, and the ones I wrote. To come.]
-text.fr: [Les skills produit que j’utilise, et ceux que j’ai écrits. À venir.]
+tags.en: Toolkit | Product | Design
+tags.fr: Boîte à outils | Produit | Design
+title: Toolkit
+text.en: The agent skills I reach for, picked by the question I need answered.
+text.fr: Les skills d’agent que j’utilise, choisis selon la question à trancher.
+text.en: **[Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills)** by Dean Peters: to separate what a client asks for from what they actually need, prepare discovery interviews and pick the cheapest probe before building anything.
+text.fr: **[Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills)** de Dean Peters : pour distinguer ce qu’un client demande de ce dont il a vraiment besoin, préparer les entretiens de discovery et choisir le test le moins coûteux avant de construire quoi que ce soit.
+text.en: **[PM Skills](https://github.com/phuryn/pm-skills)** by Paweł Huryn: to red-team an idea that looks too good, rank the assumptions it rests on and map what we learn into an opportunity solution tree.
+text.fr: **[PM Skills](https://github.com/phuryn/pm-skills)** de Paweł Huryn : pour attaquer une idée trop séduisante, classer les hypothèses sur lesquelles elle repose et ranger ce qu’on apprend dans un opportunity solution tree.
+text.en: **[TasteCode](https://tastecode.dev/)**: the desktop home for my coding agents, with a Design Mode that takes a page from brief to a reviewed live preview at every screen size.
+text.fr: **[TasteCode](https://tastecode.dev/)** : l’espace de travail de mes agents de code, avec un Design Mode qui mène une page du brief à un aperçu en ligne relu, à toutes les tailles d’écran.
+text.en: **[Impeccable](https://github.com/pbakaus/impeccable)**: a shared design vocabulary for my agents (critique, audit, polish) that catches the usual tells of AI-made interfaces before they ship. This site was shaped with both.
+text.fr: **[Impeccable](https://github.com/pbakaus/impeccable)** : un vocabulaire de design commun avec mes agents (critique, audit, polish), qui repère les tics des interfaces faites par IA avant la mise en ligne. Ce site a été travaillé avec les deux.
+facts.en: “The client asks for X, but I’m not sure of the need” → incoming-request-advisor, then problem-framing-canvas | “This idea looks great: take it apart” → strategy-red-team, then identify-assumptions-existing | “What must we learn before deciding?” → prioritize-assumptions, then pol-probe-advisor | “How do we check the problem with customers?” → discovery-interview-prep, then opportunity-solution-tree
+facts.fr: « Le client demande X, mais je ne suis pas sûr du besoin » → incoming-request-advisor, puis problem-framing-canvas | « Cette idée paraît séduisante : démonte-la » → strategy-red-team, puis identify-assumptions-existing | « Qu’est-ce qu’on doit apprendre avant de décider ? » → prioritize-assumptions, puis pol-probe-advisor | « Comment vérifier le problème auprès des clients ? » → discovery-interview-prep, puis opportunity-solution-tree
 
 
 # Page: freelance

@@ -13,3 +13,5 @@
 | 2026-10-15 | agent:orchestrator | B-Sides: role filled on those three cards (EN and FR) |
 | 2026-10-16 | human:william | Remove Radio Bonzo for now; MEWI started September 2024; do not mention the LLM project for now |
 | 2026-10-16 | agent:orchestrator | Removed the Radio Bonzo and LLM cards (badges now 3 / 6 / 5); MEWI tag "2024 – now"; Stuff I built intro shortened to stay true with a placeholder card |
+| 2026-10-16 | human:william | Toolkit: list the PM skills he uses (Dean Peters, Paweł Huryn, with a need → skill table) and say he uses TasteCode and Impeccable for design; must be visible on the portfolio |
+| 2026-10-16 | agent:orchestrator | Stuff I built: the "PM toolkit" placeholder becomes a full "Toolkit" card (EN and FR): 4 links with one sentence each, then the 4 needs mapped to a first and a second skill. Skill names and authors checked on the public catalogues (skills.sh, phuryn/pm-skills pages), TasteCode and Impeccable on their own sites (2026-10-16). Playwright at 375 and 1280 px, EN and FR: 4 links visible, no horizontal scroll, no page error |
