@@ -81,14 +81,14 @@ image: screens/nightcrawler.jpg | https://williampenet.github.io/nightcrawler/
 tags.en: Live | Solo build
 tags.fr: En ligne | Projet solo
 title: SpotiBoard
-text.en: 15 years of Spotify history, finally in a dashboard that answers questions.
-text.fr: 15 ans d’historique Spotify, enfin dans un tableau de bord qui répond aux questions.
-text.en: Spotify Wrapped is a 60-second showreel of one calendar year. I loaded the full export into Supabase, with a Streamlit interface and Plotly charts.
-text.fr: Spotify Wrapped, c’est une bande-annonce de 60 secondes sur une année civile. J’ai chargé l’export complet dans Supabase, avec une interface Streamlit et des graphiques Plotly.
+text.en: I wanted a project to practise API calls and see what Streamlit can do. I was also curious about what 15 years of Spotify listening would say about me.
+text.fr: Je cherchais un projet pour m’exercer aux appels d’API et tester ce que Streamlit permet de faire. J’étais aussi curieux de voir ce que 15 ans d’écoute Spotify diraient de moi.
+text.en: So I built this dashboard, before Spotify started showing similar all-time stats in its own app.
+text.fr: J’ai donc construit ce tableau de bord, avant que Spotify ne propose des statistiques similaires dans sa propre app.
 text.en: **Cut on purpose:** ranking charts switch themselves off when a filter is active. A Top 10 that silently excludes most of the data is misinformation dressed as a number.
 text.fr: **Coupé volontairement :** les classements se désactivent dès qu’un filtre est actif. Un Top 10 qui exclut en silence l’essentiel des données, c’est de la désinformation déguisée en chiffre.
-small.en: Stack: Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
-small.fr: Outils : Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
+small.en: Stack: full Spotify data export loaded into Supabase (PostgreSQL), recent plays synced from the Spotify API with n8n · Streamlit dashboard with pandas and Plotly, hosted on Streamlit Community Cloud · [Live](https://spotiboard.streamlit.app) · [GitHub](https://github.com/williampenet/spotiboard)
+small.fr: Outils : export complet des données Spotify chargé dans Supabase (PostgreSQL), écoutes récentes synchronisées depuis l’API Spotify avec n8n · tableau de bord Streamlit avec pandas et Plotly, hébergé sur Streamlit Community Cloud · [En ligne](https://spotiboard.streamlit.app) · [GitHub](https://github.com/williampenet/spotiboard)
 image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
 
 ## Card
