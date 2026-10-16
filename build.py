@@ -31,7 +31,7 @@ ASSETS = {
 }
 
 # Folder pages, in dock order. Their text lives in content.md under "# Page: <slug>".
-FOLDERS = ["stuff-i-built", "freelance", "b-sides"]
+FOLDERS = ["stuff-i-built", "career", "b-sides"]
 
 MIME = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",
         ".webp": "image/webp", ".svg": "image/svg+xml"}

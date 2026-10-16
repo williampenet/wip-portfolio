@@ -109,7 +109,7 @@ html[data-page="home"] .layer { display: none; }
 @keyframes lOut { from { transform: none; opacity: 1; border-radius: 0; } to { transform: scale(.06); opacity: 0; border-radius: 28px; } }
 .view { display: none; }
 html[data-page="stuff-i-built"] .view[data-view="stuff-i-built"],
-html[data-page="freelance"] .view[data-view="freelance"],
+html[data-page="career"] .view[data-view="career"],
 html[data-page="b-sides"] .view[data-view="b-sides"],
 html[data-page="about"] .view[data-view="about"] { display: block; }
 .view h1:focus, #dock:focus { outline: none; }
@@ -233,7 +233,7 @@ img.tool-logo { border-radius: 3px; }
 <nav class="dock" id="dock" tabindex="-1" aria-label="Folders and contact" data-fr-aria-label="Dossiers et contact">
 <ul role="list">
 <li><a class="dk" href="{{ROOT}}stuff-i-built/" data-nav="stuff-i-built" data-tip="Stuff I built · {{COUNT_STUFF_I_BUILT}}" aria-label="Stuff I built, {{COUNT_STUFF_I_BUILT}} items" data-fr-aria-label="Stuff I built, {{COUNT_STUFF_I_BUILT}} éléments"><span class="dk-face"><img src="data:image/png;base64,{{DK_BUILT_B64}}" alt=""></span><span class="dk-count" aria-hidden="true">{{COUNT_STUFF_I_BUILT}}</span><span class="dk-label" aria-hidden="true">Stuff I built</span></a></li>
-<li><a class="dk" href="{{ROOT}}freelance/" data-nav="freelance" data-tip="Freelance · {{COUNT_FREELANCE}}" aria-label="Freelance, {{COUNT_FREELANCE}} roles" data-fr-aria-label="Freelance, {{COUNT_FREELANCE}} missions"><span class="dk-face"><img src="data:image/png;base64,{{DK_FREELANCE_B64}}" alt=""></span><span class="dk-count" aria-hidden="true">{{COUNT_FREELANCE}}</span><span class="dk-label" aria-hidden="true">Freelance</span></a></li>
+<li><a class="dk" href="{{ROOT}}career/" data-nav="career" data-tip="Career · {{COUNT_CAREER}}" aria-label="Career, {{COUNT_CAREER}} roles" data-fr-aria-label="Career, {{COUNT_CAREER}} postes"><span class="dk-face"><img src="data:image/png;base64,{{DK_FREELANCE_B64}}" alt=""></span><span class="dk-count" aria-hidden="true">{{COUNT_CAREER}}</span><span class="dk-label" aria-hidden="true">Career</span></a></li>
 <li><a class="dk" href="{{ROOT}}b-sides/" data-nav="b-sides" data-tip="B-Sides · {{COUNT_B_SIDES}}" aria-label="B-Sides, {{COUNT_B_SIDES}} projects" data-fr-aria-label="B-Sides, {{COUNT_B_SIDES}} projets"><span class="dk-face"><img src="data:image/png;base64,{{DK_BSIDES_B64}}" alt=""></span><span class="dk-count" aria-hidden="true">{{COUNT_B_SIDES}}</span><span class="dk-label" aria-hidden="true">B-Sides</span></a></li>
 </ul>
 <span class="dock-sep" aria-hidden="true"></span>
@@ -291,7 +291,7 @@ img.tool-logo { border-radius: 3px; }
   var doc = document.documentElement;
   var home = document.getElementById('home');
   var layer = document.getElementById('layer');
-  var PAGES = ['stuff-i-built', 'freelance', 'b-sides', 'about'];
+  var PAGES = ['stuff-i-built', 'career', 'b-sides', 'about'];
   var TITLES = { en: { home: {{TITLE_HOME_EN_JS}} }, fr: { home: {{TITLE_HOME_FR_JS}} } };
   var LABELS = {
     en: { theme: ['Switch to dark theme', 'Switch to light theme'] },

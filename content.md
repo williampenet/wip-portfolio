@@ -13,7 +13,7 @@ Règles d'écriture
 - Un paragraphe tient sur UNE ligne (aussi long que nécessaire). Pour plusieurs paragraphes,
   répète `text.en:` / `text.fr:` dans l'ordre.
 - `|` sépare les éléments d'une liste (tags, facts) ou le retour à la ligne du titre d'accueil.
-- Mise en forme : **gras**, [texte du lien](https://adresse), [lien vers une page](page:freelance).
+- Mise en forme : **gras**, [texte du lien](https://adresse), [lien vers une page](page:career).
 - `{icon}` place la petite icône violette dans une phrase d'intro (voir `icon:`).
 - `{logo:python|Python}` place le logo d'un outil, dans sa couleur, collé à son nom (fichiers dans assets/tools/, issus de Simple Icons).
 - Un texte qui commence par [ ... ] s'affiche en gris italique : c'est un emplacement à remplir.
@@ -111,11 +111,11 @@ text.en: {logo:impeccable|**[Impeccable](https://github.com/pbakaus/impeccable)*
 text.fr: {logo:impeccable|**[Impeccable](https://github.com/pbakaus/impeccable)**} : un vocabulaire de design commun avec mes agents (critique, audit, polish), qui repère les tics des interfaces faites par IA avant la mise en ligne. Ce site a été travaillé avec les deux.
 
 
-# Page: freelance
-title: Freelance
+# Page: career
+title: Career
 icon: briefcase
-intro.en: Ten years of product {icon}, one mission at a time: startup, e-commerce, B2B SaaS, data, streaming. Most recent first.
-intro.fr: Dix ans de produit {icon} menés mission après mission : startup, e-commerce, SaaS B2B, data, streaming. La plus récente d’abord.
+intro.en: Over ten years in product {icon}, now focused on data and CRM integration: making customer data flow between systems, both ways and in real time. Most recent first.
+intro.fr: Plus de dix ans de produit {icon}, aujourd’hui centrés sur la data et l’intégration CRM : faire circuler les données clients entre les systèmes, dans les deux sens et en temps réel. Du plus récent au plus ancien.
 
 ## Card
 compact: yes
@@ -123,7 +123,9 @@ logo: bedrock | B
 tags.en: 2025 – now | Streaming
 tags.fr: 2025 – aujourd’hui | Streaming
 title: Bedrock Streaming
-text: Product Manager.
+text: Freelance Senior Product Manager.
+text.en: I led the two-way integration between our broadcaster clients’ CRMs and the streaming platform, from defining the use cases to setting up real-time data feeds.
+text.fr: J’ai piloté l’intégration bidirectionnelle entre les CRM de nos clients diffuseurs et la plateforme de streaming, de la définition des cas d’usage à la mise en place des flux de données en temps réel.
 
 ## Card
 logo: interflora | I
