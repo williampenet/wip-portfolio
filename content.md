@@ -155,8 +155,8 @@ small.fr: Outils : {logo:hubspot|HubSpot}, Odoo CRM, LinkedIn Sales Navigator, L
 
 ## Card
 logo: mister-auto | MA
-tags.en: 2019 – 2021 | E-commerce | 21 countries
-tags.fr: 2019 – 2021 | E-commerce | 21 pays
+tags.en: 2019 – 2021 | E-commerce
+tags.fr: 2019 – 2021 | E-commerce
 title: Mister Auto × Stellantis
 text: Product Manager & CRO Lead
 text.en: I rolled out Algolia search across 21 countries and 12 partner sites.
