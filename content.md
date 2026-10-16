@@ -133,14 +133,14 @@ tags: 2024 – 2025 | Data
 title: Interflora
 text.en: Data Product Manager. I automated sentiment analysis of 40k+ monthly customer comments with Google Gemini 2.5 Flash.
 text.fr: Data Product Manager. J’ai automatisé l’analyse de sentiment de plus de 40 000 commentaires clients par mois avec Google Gemini 2.5 Flash.
-text.en: Feedback came in through NPS, Trustpilot, Hotjar, Zendesk and social, in several languages. The CX team tagged it by hand, so insights landed late and read differently from one business unit to the next.
-text.fr: Les retours arrivaient par le NPS, Trustpilot, Hotjar, Zendesk et les réseaux, en plusieurs langues. L’équipe CX les classait à la main : les enseignements arrivaient tard et se lisaient différemment d’une BU à l’autre.
+text.en: Feedback came in through NPS, {logo:trustpilot|Trustpilot}, {logo:hotjar|Hotjar}, {logo:zendesk|Zendesk} and social, in several languages. The CX team tagged it by hand, so insights landed late and read differently from one business unit to the next.
+text.fr: Les retours arrivaient par le NPS, {logo:trustpilot|Trustpilot}, {logo:hotjar|Hotjar}, {logo:zendesk|Zendesk} et les réseaux, en plusieurs langues. L’équipe CX les classait à la main : les enseignements arrivaient tard et se lisaient différemment d’une BU à l’autre.
 text.en: Every comment is classified twice; disagreements go to a human. **I chose to build in-house** so we could change the prompt daily on our own data instead of waiting for a vendor’s roadmap.
 text.fr: Chaque commentaire est classé deux fois ; les désaccords remontent à un humain. **J’ai choisi de construire en interne** pour pouvoir modifier le prompt chaque jour sur nos propres données, sans attendre la feuille de route d’un éditeur.
 facts.en: 3 analyst-days a month → a few minutes | 95% accuracy on blind evaluation | 40× cheaper than the vendor quote
 facts.fr: 3 jours d’analyste par mois → quelques minutes | 95 % de précision en évaluation à l’aveugle | 40× moins cher que le devis de l’éditeur
-small.en: Stack: Gemini 2.5 Flash, Python, BigQuery, GCP, Power BI · Internal product, no public link.
-small.fr: Outils : Gemini 2.5 Flash, Python, BigQuery, GCP, Power BI · Produit interne, pas de lien public.
+small.en: Stack: {logo:googlegemini|Gemini 2.5 Flash}, {logo:python|Python}, {logo:googlebigquery|BigQuery}, {logo:googlecloud|GCP}, Power BI · Internal product, no public link.
+small.fr: Outils : {logo:googlegemini|Gemini 2.5 Flash}, {logo:python|Python}, {logo:googlebigquery|BigQuery}, {logo:googlecloud|GCP}, Power BI · Produit interne, pas de lien public.
 
 ## Card
 compact: yes
@@ -148,8 +148,8 @@ logo: systhen | S
 tags.en: 2021 – 2024 | B2B SaaS
 tags.fr: 2021 – 2024 | SaaS B2B
 title: Systhen
-text.en: Group CMO & Product Marketing Manager: digital acquisition, HubSpot, Odoo CRM, 500+ qualified leads a year.
-text.fr: Group CMO & Product Marketing Manager : acquisition digitale, HubSpot, Odoo CRM, plus de 500 leads qualifiés par an.
+text.en: Group CMO & Product Marketing Manager: digital acquisition, {logo:hubspot|HubSpot}, Odoo CRM, 500+ qualified leads a year.
+text.fr: Group CMO & Product Marketing Manager : acquisition digitale, {logo:hubspot|HubSpot}, Odoo CRM, plus de 500 leads qualifiés par an.
 
 ## Card
 logo: mister-auto | MA
@@ -164,8 +164,8 @@ text.en: Multi-attribute indexing, synonyms built from real search logs, continu
 text.fr: Indexation multi-attributs, synonymes construits à partir des vraies recherches, tests A/B en continu. **J’ai gardé des humains dans la boucle sur le vocabulaire** : un nom de pièce technique ne survit pas à un synonyme généré sans quelqu’un qui connaît le métier.
 facts.en: +12% conversion | +2–6% CTR depending on country | “No results” pages cut by 65–80%
 facts.fr: +12 % de conversion | +2 à 6 % de CTR selon les pays | Pages « aucun résultat » réduites de 65 à 80 %
-small.en: Stack: Algolia, AB Tasty, GA, JS
-small.fr: Outils : Algolia, AB Tasty, GA, JS
+small.en: Stack: {logo:algolia|Algolia}, AB Tasty, {logo:googleanalytics|GA}, {logo:javascript|JS}
+small.fr: Outils : {logo:algolia|Algolia}, AB Tasty, {logo:googleanalytics|GA}, {logo:javascript|JS}
 
 ## Card
 compact: yes
