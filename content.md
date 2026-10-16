@@ -60,8 +60,8 @@ text.fr: On en parle ?
 # Page: stuff-i-built
 title: Stuff I built
 icon: hammer
-intro.en: Tools I built on my own time {icon}, because I wanted them to exist. Live ones first, work in progress after.
-intro.fr: Des outils construits sur mon temps libre {icon}, parce que je voulais qu’ils existent. Ceux en ligne d’abord, les chantiers ensuite.
+intro.en: Tools I built on my own time {icon}, because I wanted them to exist.
+intro.fr: Des outils construits sur mon temps libre {icon}, parce que je voulais qu’ils existent.
 
 ## Card
 tags.en: Live | Solo build
@@ -90,14 +90,6 @@ text.fr: **Coupé volontairement :** les classements se désactivent dès qu’u
 small.en: Stack: Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
 small.fr: Outils : Supabase, Streamlit, Plotly, Python · [spotiboard.streamlit.app](https://spotiboard.streamlit.app)
 image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
-
-## Card
-compact: yes
-tags.en: In progress | Open-source LLM
-tags.fr: En cours | LLM open source
-title: [Project name — to come]
-text.en: [Customizing an open-source LLM: the need, the model chosen, how it is evaluated. To come.]
-text.fr: [Personnalisation d’un LLM open source : le besoin, le modèle choisi, son évaluation. À venir.]
 
 ## Card
 compact: yes
@@ -189,8 +181,8 @@ intro.fr: Même cerveau, temps libre {icon}. Illustration, soirées musicales et
 ## Card
 compact: yes
 logo: mewi | MW
-tags.en: [years] | Illustration & publishing
-tags.fr: [années] | Illustration et édition
+tags.en: 2024 – now | Illustration & publishing
+tags.fr: 2024 – aujourd’hui | Illustration et édition
 title: MEWI
 text.en: An illustration and publishing project I started on the side. [What it makes, my role. To come.]
 text.fr: Un projet d’illustration et d’édition lancé à côté. [Ce qu’il produit, mon rôle. À venir.]
@@ -216,16 +208,6 @@ title: Brrrr Sessions
 text.en: A free weekly playlist of about 40 minutes: a side A of standard-length tracks, a side B of long ones, some over 15 minutes. Open to guest selectors. **Founder and host.**
 text.fr: Une playlist hebdomadaire gratuite d’environ 40 minutes : une face A de morceaux au format classique, une face B de titres longs, parfois plus de 15 minutes. Ouverte aux sélections invitées. **Fondateur et animateur.**
 small: [bazaar-bonzo.ovh/brrrrsessions](https://bazaar-bonzo.ovh/brrrrsessions/)
-
-## Card
-compact: yes
-logo: radio-bonzo | RB
-tags.en: 2009 – 2010 | New York | Radio
-tags.fr: 2009 – 2010 | New York | Radio
-title: Radio Bonzo
-text.en: A French radio show from New York. **Founder and host.** [The format. To come.]
-text.fr: Une radio française depuis New York. **Fondateur et animateur.** [Le format. À venir.]
-small: [bazaar-bonzo.ovh/radiobonzo](https://bazaar-bonzo.ovh/radiobonzo/)
 
 ## Card
 logo: data-for-good | DG

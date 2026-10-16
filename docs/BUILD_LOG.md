@@ -11,3 +11,5 @@
 | 2026-10-15 | agent:orchestrator | Dock: a count badge on each folder (computed by `build.py` from the cards in `content.md`); mobile dock on one row instead of stacked rows (icon size scales with viewport width). Measured with Playwright at 320/360/375/390/414/1280 px: one row, no horizontal scroll, no page error; at 320 px labels are tight. Content: Stuff I built gets placeholder cards for the open-source LLM project and the PM toolkit; B-Sides gets MEWI, DIE POD DIE, Brrrr Sessions and Radio Bonzo (facts from bazaar-bonzo.ovh pages read 2026-10-15; roles and years left as placeholders). Stuff I built intro no longer says "all live" |
 | 2026-10-15 | human:william | Founder and host of DIE POD DIE, Brrrr Sessions and Radio Bonzo |
 | 2026-10-15 | agent:orchestrator | B-Sides: role filled on those three cards (EN and FR) |
+| 2026-10-16 | human:william | Remove Radio Bonzo for now; MEWI started September 2024; do not mention the LLM project for now |
+| 2026-10-16 | agent:orchestrator | Removed the Radio Bonzo and LLM cards (badges now 3 / 6 / 5); MEWI tag "2024 – now"; Stuff I built intro shortened to stay true with a placeholder card |
