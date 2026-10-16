@@ -268,8 +268,7 @@ def render_card(entries):
         else:
             out.append(f'<ul class="facts" role="list" data-l="en">{ul(en, "en")}</ul>')
             out.append(f'<ul class="facts" role="list" data-l="fr" lang="fr">{ul(fr, "fr")}</ul>')
-    small = one(entries, "small")
-    if small:
+    for small in many(entries, "small"):  # repeat `small:` for several lines (e.g. stack, then links)
         out.append(block("p", 'class="small"', small))
     body = "\n".join(out)
     if logo:

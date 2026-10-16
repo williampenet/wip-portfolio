@@ -22,6 +22,7 @@ Règles d'écriture
   (ou .jpg/.webp/.svg). Tant que le fichier n'existe pas, les initiales s'affichent.
 - Captures : `image: screens/fichier.jpg | https://lien-au-clic` → assets/screens/fichier.jpg
 - `compact: yes` = carte courte (pas de détail).
+- `small:` (petit texte gris) peut être répété : chaque `small.en` / `small.fr` fait une ligne à part.
 - Pour ajouter une mission ou un projet : copie un bloc `## Card` complet et modifie-le.
 - Les lignes qui commencent par // sont des commentaires (ignorées).
 
@@ -74,8 +75,10 @@ text.en: So I built a personal concert recommender fed by my own taste: the arti
 text.fr: J’ai donc construit une app perso de recommandation de concerts, nourrie par mes goûts : les artistes de mon compte Spotify et un bouton « j’aime / pas pour moi » sur chaque concert. Un modèle Mistral note chaque concert et le range dans Must Not Miss, For You ou Discovery, avec une raison en une phrase.
 text.en: **Cut on purpose:** accounts, ticketing and social features. It is built for one person; friends get a shared link, with nothing to sign up for.
 text.fr: **Coupé volontairement :** comptes, billetterie et fonctions sociales. L’app est faite pour une personne ; les amis reçoivent un lien partagé, sans inscription.
-small.en: Stack: {logo:python|Python} pipeline run daily on {logo:githubactions|GitHub Actions}, reading venue websites, {logo:openstreetmap|OpenStreetMap} and Ticketmaster · {logo:mistralai|Mistral Small 3.2} for taste and Gemma 4 for agenda pages, both on {logo:scaleway|Scaleway} in Paris · serverless {logo:postgresql|PostgreSQL} on Scaleway for likes and verdicts · static web app on {logo:github|GitHub Pages} · [Live](https://williampenet.github.io/nightcrawler/) · [GitHub](https://github.com/williampenet/nightcrawler)
-small.fr: Outils : pipeline {logo:python|Python} lancé chaque jour par {logo:githubactions|GitHub Actions}, qui lit les sites des salles, {logo:openstreetmap|OpenStreetMap} et Ticketmaster · {logo:mistralai|Mistral Small 3.2} pour le goût et Gemma 4 pour les pages d’agenda, tous deux chez {logo:scaleway|Scaleway} à Paris · {logo:postgresql|PostgreSQL} serverless chez Scaleway pour les avis et les verdicts · app web statique sur {logo:github|GitHub Pages} · [En ligne](https://williampenet.github.io/nightcrawler/) · [GitHub](https://github.com/williampenet/nightcrawler)
+small.en: Stack: {logo:python|Python} pipeline run daily on {logo:githubactions|GitHub Actions}, reading venue websites, {logo:openstreetmap|OpenStreetMap} and Ticketmaster · {logo:mistralai|Mistral Small 3.2} for taste and Gemma 4 for agenda pages, both on {logo:scaleway|Scaleway} in Paris · serverless {logo:postgresql|PostgreSQL} on Scaleway for likes and verdicts · static web app on {logo:github|GitHub Pages}
+small.en: [Live](https://williampenet.github.io/nightcrawler/) · [GitHub](https://github.com/williampenet/nightcrawler)
+small.fr: Outils : pipeline {logo:python|Python} lancé chaque jour par {logo:githubactions|GitHub Actions}, qui lit les sites des salles, {logo:openstreetmap|OpenStreetMap} et Ticketmaster · {logo:mistralai|Mistral Small 3.2} pour le goût et Gemma 4 pour les pages d’agenda, tous deux chez {logo:scaleway|Scaleway} à Paris · {logo:postgresql|PostgreSQL} serverless chez Scaleway pour les avis et les verdicts · app web statique sur {logo:github|GitHub Pages}
+small.fr: [En ligne](https://williampenet.github.io/nightcrawler/) · [GitHub](https://github.com/williampenet/nightcrawler)
 image: screens/nightcrawler.jpg | https://williampenet.github.io/nightcrawler/
 
 ## Card
@@ -86,8 +89,10 @@ text.en: I wanted a project to practise API calls and see what Streamlit can do.
 text.fr: Je cherchais un projet pour m’exercer aux appels d’API et tester ce que Streamlit permet de faire. J’étais aussi curieux de voir ce que 15 ans d’écoute Spotify diraient de moi.
 text.en: So I built this dashboard, before Spotify started showing similar all-time stats in its own app.
 text.fr: J’ai donc construit ce tableau de bord, avant que Spotify ne propose des statistiques similaires dans sa propre app.
-small.en: Stack: full {logo:spotify|Spotify} data export loaded into {logo:supabase|Supabase} ({logo:postgresql|PostgreSQL}), recent plays synced from the Spotify API with {logo:n8n|n8n} · {logo:streamlit|Streamlit} dashboard with {logo:pandas|pandas} and {logo:plotly|Plotly}, hosted on Streamlit Community Cloud · [Live](https://spotiboard.streamlit.app) · [GitHub](https://github.com/williampenet/spotiboard)
-small.fr: Outils : export complet des données {logo:spotify|Spotify} chargé dans {logo:supabase|Supabase} ({logo:postgresql|PostgreSQL}), écoutes récentes synchronisées depuis l’API Spotify avec {logo:n8n|n8n} · tableau de bord {logo:streamlit|Streamlit} avec {logo:pandas|pandas} et {logo:plotly|Plotly}, hébergé sur Streamlit Community Cloud · [En ligne](https://spotiboard.streamlit.app) · [GitHub](https://github.com/williampenet/spotiboard)
+small.en: Stack: full {logo:spotify|Spotify} data export loaded into {logo:supabase|Supabase} ({logo:postgresql|PostgreSQL}), recent plays synced from the Spotify API with {logo:n8n|n8n} · {logo:streamlit|Streamlit} dashboard with {logo:pandas|pandas} and {logo:plotly|Plotly}, hosted on Streamlit Community Cloud
+small.en: [Live](https://spotiboard.streamlit.app) · [GitHub](https://github.com/williampenet/spotiboard)
+small.fr: Outils : export complet des données {logo:spotify|Spotify} chargé dans {logo:supabase|Supabase} ({logo:postgresql|PostgreSQL}), écoutes récentes synchronisées depuis l’API Spotify avec {logo:n8n|n8n} · tableau de bord {logo:streamlit|Streamlit} avec {logo:pandas|pandas} et {logo:plotly|Plotly}, hébergé sur Streamlit Community Cloud
+small.fr: [En ligne](https://spotiboard.streamlit.app) · [GitHub](https://github.com/williampenet/spotiboard)
 image: screens/spotiboard.jpg | https://spotiboard.streamlit.app
 
 ## Card
