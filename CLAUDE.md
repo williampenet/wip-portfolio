@@ -30,9 +30,10 @@ Read before any change:
 - Log every session's actions in `docs/BUILD_LOG.md`.
 
 ## Preview
-- No public deployment yet. GitHub Pages is free on a public repo
-  (https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages);
-  enabling it is a repo setting only William can change (agent proxy returns HTTP 403).
+- Live site: https://williampenet.github.io/wip-portfolio/ (GitHub Pages, branch `main`, root;
+  enabled by William on 2026-10-17). Every push to `main` redeploys it ("pages build and
+  deployment" workflow). github.io is blocked from the agent workspace: check it with WebFetch
+  or a browser tool.
 - Preview = private claude.ai artifact https://claude.ai/artifact/XTgW9uK9Gixs3S9WAX5LUu
   (`index.html` as the page, each `<slug>/index.html` as a file). After a change to `main`,
   republish it to the same URL (Artifact tool, `url` = that link) so William sees it on any device.

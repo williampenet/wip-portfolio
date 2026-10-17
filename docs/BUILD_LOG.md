@@ -57,3 +57,5 @@
 | 2026-10-16 | agent:orchestrator | CV icon removed from the dock (the CV link in About stays; the PDF is still missing from the project). Dock measured at 320, 375 and 1280 px: 5 icons on one row, no horizontal scroll, no page error. Email colour options mocked (sage #A9D3B7, sky #A9C9EE, mint #9ED8CC), nothing applied yet |
 | 2026-10-17 | agent:orchestrator | Pre-publication check of the full history (27 commits, 3 deleted files): `detect-secrets` finds nothing, no `.env`/key/certificate file, no personal data beyond the public email. Visibility change refused to the agent (proxy HTTP 403 on repo settings) |
 | 2026-10-17 | human:william | Makes the repo public. Checked: API `visibility: public`, anonymous request HTTP 200. `CLAUDE.md` status updated |
+| 2026-10-17 | human:william | Enables GitHub Pages (`main`, root) |
+| 2026-10-17 | agent:orchestrator | Pages deployment of c6770b2 succeeded; https://williampenet.github.io/wip-portfolio/ serves the home page (checked with WebFetch). Internal pages present; linked repos nightcrawler and spotiboard are public; `william-penet-cv.pdf` still missing, so its link is broken |
