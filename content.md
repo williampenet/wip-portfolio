@@ -53,8 +53,8 @@ text.en: I’m drawn to problems where the hard part is deciding, not building �
 text.fr: Ce qui m’intéresse, ce sont les problèmes où le plus dur est de décider, pas de construire — d’autant plus maintenant que l’IA a rendu la construction moins chère que jamais. J’avance par petits pas, je laisse les données trancher les débats, et je reste assez près de la technique pour en discuter plutôt que de m’en remettre à elle.
 text.en: In my own time, I build the tools I need: [Nightcrawler](https://williampenet.github.io/nightcrawler/) and [SpotiBoard](https://spotiboard.streamlit.app).
 text.fr: Sur mon temps libre, je construis les outils dont j’ai besoin : [Nightcrawler](https://williampenet.github.io/nightcrawler/) et [SpotiBoard](https://spotiboard.streamlit.app).
-text.en: WiP is my initials. It also stands for Work in Progress. Chasing perfection is the surest way to stop trying: I’d rather ship something honest, see what breaks, and keep going.
-text.fr: WiP, ce sont mes initiales. C’est aussi Work in Progress. Courir après la perfection, c’est la meilleure façon d’arrêter d’essayer : je préfère livrer quelque chose d’honnête, voir ce qui casse, et continuer.
+text.en: WiP is my initials. It also stands for Work in Progress. Chasing perfection is the surest way to stop trying: I’d rather ship something honest, see what breaks, and keep going. A mistake is information — it’s the whole idea behind [MEWI](https://mewi.studio/), my side project on the words children get wrong.
+text.fr: WiP, ce sont mes initiales. C’est aussi Work in Progress. Courir après la perfection, c’est la meilleure façon d’arrêter d’essayer : je préfère livrer quelque chose d’honnête, voir ce qui casse, et continuer. Une erreur, c’est de l’information : c’est toute l’idée de [MEWI](https://mewi.studio/), mon projet sur les mots que les enfants déforment.
 text.en: Let’s talk.
 text.fr: On en parle ?
 
@@ -204,8 +204,8 @@ logo: mewi | MW
 tags.en: 2024 – now | Stories, games, objects
 tags.fr: 2024 – aujourd’hui | Récits, jeux, objets
 title: MEWI
-text.en: The words children get wrong while learning to speak are often better than the right ones. MEWI collects them and explores their creative side through stories, games and objects. **Founder.**
-text.fr: Les mots que les enfants déforment en apprenant à parler sont souvent plus beaux que les vrais. MEWI les recueille et explore leur potentiel créatif à travers des récits, des jeux et des objets. **Fondateur.**
+text.en: When children learn to speak, their mistakes are often better than the right words. MEWI collects them and turns them into stories, games and objects. The idea behind it: a mistake, taken the right way, gives more than it costs. **Founder.**
+text.fr: Quand les enfants apprennent à parler, leurs erreurs sont souvent plus belles que les vrais mots. MEWI les recueille et en fait des récits, des jeux et des objets. L’idée de fond : une erreur, prise par le bon bout, rapporte plus qu’elle ne coûte. **Fondateur.**
 small: [mewi.studio](https://mewi.studio/)
 
 ## Card
