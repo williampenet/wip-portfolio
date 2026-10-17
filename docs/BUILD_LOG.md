@@ -61,3 +61,5 @@
 | 2026-10-17 | agent:orchestrator | Pages deployment of c6770b2 succeeded; https://williampenet.github.io/wip-portfolio/ serves the home page (checked with WebFetch). Internal pages present; linked repos nightcrawler and spotiboard are public; `william-penet-cv.pdf` still missing, so its link is broken |
 | 2026-10-17 | human:william | Wants the portfolio to bring out one of MEWI's core ideas: mistakes hold a lot of value if taken the right way, echoing the try-and-learn mindset he brings to product work |
 | 2026-10-17 | agent:orchestrator | MEWI card (EN/FR) now states the idea ("a mistake, taken the right way, gives more than it costs"); About's WiP paragraph gains one sentence linking to MEWI ("A mistake is information"). "Fail fast" left out on purpose (PRODUCT.md voice rule: no startup clichés). Playwright at 375 and 1280 px on About and B-Sides: no horizontal scroll, no page error |
+| 2026-10-17 | human:william | Artifact comment: Bedrock card tag "Streaming" becomes "Video streaming" / "Streaming vidéo" |
+| 2026-10-17 | agent:orchestrator | Bedrock tag changed in `content.md` (EN/FR), pages rebuilt |

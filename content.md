@@ -116,8 +116,8 @@ intro.fr: Plus de dix ans de produit {icon}, aujourd’hui centrés sur la data 
 ## Card
 compact: yes
 logo: bedrock | B
-tags.en: 2025 – now | Streaming
-tags.fr: 2025 – aujourd’hui | Streaming
+tags.en: 2025 – now | Video streaming
+tags.fr: 2025 – aujourd’hui | Streaming vidéo
 title: Bedrock Streaming
 text: Freelance Senior Product Manager
 text.en: I lead the two-way integration between our broadcaster clients’ CRMs and the streaming platform, from defining the use cases to setting up real-time data feeds.
