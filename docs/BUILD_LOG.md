@@ -65,3 +65,5 @@
 | 2026-10-17 | agent:orchestrator | Bedrock tag changed in `content.md` (EN/FR), pages rebuilt |
 | 2026-10-17 | human:william | Interflora tag: "eCommerce" in French, "Retail" in English |
 | 2026-10-17 | agent:orchestrator | Interflora tags split into EN/FR in `content.md`, pages rebuilt |
+| 2026-10-17 | human:william | Artifact comment: 1D Lab gets a "Streaming musical" / music-streaming tag; one spelling "eCommerce" across Career; French dock labels on mobile: "Mes outils numériques", "Carrière", "Passe temps" |
+| 2026-10-17 | agent:orchestrator | 1D Lab tags "Startup · Music streaming" / "Startup · Streaming musical" (EN wording "Music streaming", the idiomatic form); Mister Auto tag "E-commerce" → "eCommerce" in both languages (Interflora EN stays "Retail" per William); dock labels translated with `data-fr-text` ("Passe-temps" with its hyphen), French accessible names updated to match. Playwright at 320/360/375/414 px, FR and EN: dock on one row, no horizontal scroll, no page error; in French "Mes outils numériques" wraps to 3 lines and "Passe-temps" to 2 (EN: "Stuff I built" 2 lines). Desktop tooltips (`data-tip`) stay in English |

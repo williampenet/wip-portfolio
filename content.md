@@ -156,8 +156,8 @@ small.fr: Outils : {logo:hubspot|HubSpot}, Odoo CRM, LinkedIn Sales Navigator, L
 
 ## Card
 logo: mister-auto | MA
-tags.en: 2019 – 2021 | E-commerce
-tags.fr: 2019 – 2021 | E-commerce
+tags.en: 2019 – 2021 | eCommerce
+tags.fr: 2019 – 2021 | eCommerce
 title: Mister Auto × Stellantis
 text: Product Manager & CRO Lead
 text.en: I rolled out Algolia search across 21 countries and 12 partner sites.
@@ -185,7 +185,8 @@ text.fr: Des projets B2B complexes pour Airbus Helicopters, le Crédit Agricole 
 ## Card
 compact: yes
 logo: 1d-lab | 1D
-tags: 2015 – 2018 | Startup
+tags.en: 2015 – 2018 | Startup | Music streaming
+tags.fr: 2015 – 2018 | Startup | Streaming musical
 title: 1D Lab
 text.en: First Product Manager
 text.fr: Premier Product Manager
