@@ -63,3 +63,5 @@
 | 2026-10-17 | agent:orchestrator | MEWI card (EN/FR) now states the idea ("a mistake, taken the right way, gives more than it costs"); About's WiP paragraph gains one sentence linking to MEWI ("A mistake is information"). "Fail fast" left out on purpose (PRODUCT.md voice rule: no startup clichés). Playwright at 375 and 1280 px on About and B-Sides: no horizontal scroll, no page error |
 | 2026-10-17 | human:william | Artifact comment: Bedrock card tag "Streaming" becomes "Video streaming" / "Streaming vidéo" |
 | 2026-10-17 | agent:orchestrator | Bedrock tag changed in `content.md` (EN/FR), pages rebuilt |
+| 2026-10-17 | human:william | Interflora tag: "eCommerce" in French, "Retail" in English |
+| 2026-10-17 | agent:orchestrator | Interflora tags split into EN/FR in `content.md`, pages rebuilt |

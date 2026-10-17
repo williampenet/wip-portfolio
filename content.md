@@ -127,7 +127,8 @@ small.fr: Outils produit : {logo:claude|Claude}, {logo:apachesuperset|Superset},
 
 ## Card
 logo: interflora | I
-tags: 2024 – 2025 | Retail
+tags.en: 2024 – 2025 | Retail
+tags.fr: 2024 – 2025 | eCommerce
 title: Interflora
 text: Data Product Manager
 text.en: I automated sentiment analysis of 40k+ monthly customer comments with Google Gemini 2.5 Flash.
