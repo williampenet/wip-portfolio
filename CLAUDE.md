@@ -1,8 +1,9 @@
 # WiP Portfolio — context for agents
 
 William Pénet's personal portfolio site (job search, senior Product / AI product builder roles).
-Status: **private, work in progress.** Do not make the repo public or deploy it publicly
-until William says the site is finished.
+Status: **public repo, work in progress** (made public by William on 2026-10-17).
+Everything committed is world-readable, including history: never commit secrets or
+personal data beyond the public contact surfaces.
 
 Read before any change:
 - `PRODUCT.md` — audience, purpose, positioning, voice (binding on all copy).
@@ -28,9 +29,10 @@ Read before any change:
   is large or risky).
 - Log every session's actions in `docs/BUILD_LOG.md`.
 
-## Private preview
-- No public deployment while the repo is private (GitHub Pages on a private repo needs GitHub Pro:
-  https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
+## Preview
+- No public deployment yet. GitHub Pages is free on a public repo
+  (https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages);
+  enabling it is a repo setting only William can change (agent proxy returns HTTP 403).
 - Preview = private claude.ai artifact https://claude.ai/artifact/XTgW9uK9Gixs3S9WAX5LUu
   (`index.html` as the page, each `<slug>/index.html` as a file). After a change to `main`,
   republish it to the same URL (Artifact tool, `url` = that link) so William sees it on any device.

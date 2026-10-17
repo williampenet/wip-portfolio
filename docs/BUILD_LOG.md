@@ -55,3 +55,5 @@
 | 2026-10-16 | agent:orchestrator | Home logo: greyscale/invert filters and the round frame removed; shown in its own colours at 140 px wide (110 px on mobile), same in both themes. Playwright at 375 and 1280 px, light and dark: no horizontal scroll, no page error |
 | 2026-10-16 | human:william | Remove the CV icon from the dock; asks for a colour suggestion for a new email icon |
 | 2026-10-16 | agent:orchestrator | CV icon removed from the dock (the CV link in About stays; the PDF is still missing from the project). Dock measured at 320, 375 and 1280 px: 5 icons on one row, no horizontal scroll, no page error. Email colour options mocked (sage #A9D3B7, sky #A9C9EE, mint #9ED8CC), nothing applied yet |
+| 2026-10-17 | agent:orchestrator | Pre-publication check of the full history (27 commits, 3 deleted files): `detect-secrets` finds nothing, no `.env`/key/certificate file, no personal data beyond the public email. Visibility change refused to the agent (proxy HTTP 403 on repo settings) |
+| 2026-10-17 | human:william | Makes the repo public. Checked: API `visibility: public`, anonymous request HTTP 200. `CLAUDE.md` status updated |
