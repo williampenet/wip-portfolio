@@ -36,8 +36,8 @@ description.en: William Pénet, Senior Product Builder in freelance. Ten years o
 description.fr: William Pénet, Senior Product Builder en freelance. Dix ans de produit, l’IA livrée en production, des projets personnels en ligne.
 name: William Pénet
 // Un | dans le titre marque un retour à la ligne (facultatif).
-headline.en: Freelancing Senior Product Builder
-headline.fr: Product Builder Senior freelance
+headline.en: I build things, | with or without AI.
+headline.fr: Je construis des choses, | avec ou sans IA.
 
 
 # About
