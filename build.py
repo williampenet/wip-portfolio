@@ -238,6 +238,34 @@ def block(tag, attrs, v, icon=None):
     return f'<{tag}{a} data-l="en">{en}</{tag}>\n<{tag}{a} data-l="fr" lang="fr">{fr}</{tag}>'
 
 
+REVEAL_ROT = [-6, 4, -3, 7, -5, 3, -7, 5, -2, 6]
+REVEAL_LABEL = {"en": "What \u201c{w}\u201d covers", "fr": "Ce que recouvrent les \u00ab\u00a0{w}\u00a0\u00bb"}
+
+
+def render_reveal(home, headline):
+    """{reveal} in the headline: a button that scatters tags around the title (one list per language)."""
+    if "{reveal}" not in headline:
+        return headline, ""
+    word, tags = one(home, "reveal"), one(home, "tags")
+    if not word or not tags:
+        raise ContentError("content.md: {reveal} used in headline but 'reveal' or 'tags' is missing")
+    lists = []
+    for lang in ("en", "fr"):
+        btn = (f'<button type="button" class="reveal" data-action="reveal" aria-expanded="false" '
+               f'aria-controls="reveal-{lang}">{fmt(word[lang], lang)}</button>')
+        headline = headline.replace("{reveal}", btn, 1)
+        items = [t.strip() for t in tags[lang].split("|") if t.strip()]
+        lis = "".join(
+            f'<li class="tg{i % 6 + 1}" style="--i:{i};--r:{REVEAL_ROT[i % len(REVEAL_ROT)]}deg">{fmt(t, lang)}</li>'
+            for i, t in enumerate(items))
+        label = htmlmod.escape(REVEAL_LABEL[lang].format(w=word[lang]), quote=True)
+        lang_attr = ' lang="fr"' if lang == "fr" else ""
+        lists.append(f'<ul class="reveal-tags" id="reveal-{lang}" data-l="{lang}"{lang_attr} role="list" aria-label="{label}">{lis}</ul>')
+    if "{reveal}" in headline:
+        raise ContentError("content.md: {reveal} must appear once per language in the headline")
+    return headline, "\n".join(lists)
+
+
 def split_list(v):
     en = [x.strip() for x in v["en"].split("|")]
     fr = [x.strip() for x in v["fr"].split("|")]
@@ -347,6 +375,7 @@ def render(data):
     line1 = inline({"en": h_en[0], "fr": h_fr[0]})
     line2 = inline({"en": h_en[1] if len(h_en) > 1 else "", "fr": h_fr[1] if len(h_fr) > 1 else ""})
     headline = f'<span class="sr">{htmlmod.escape(name)}, </span>{line1}' + (f'<br>{line2}' if line2 else '')
+    headline, reveal_tags = render_reveal(home, headline)
 
     a_title = one(about, "title") or {"en": "About", "fr": "À propos"}
     about_h1 = f'<h1 class="sr" id="page-title-about" tabindex="-1">{inline(a_title)}</h1>'
@@ -359,6 +388,7 @@ def render(data):
         "{{DESCRIPTION}}": htmlmod.escape(desc["en"], quote=True),
         "{{HOME_NAME}}": htmlmod.escape(name),
         "{{HOME_HEADLINE}}": headline,
+        "{{HOME_REVEAL_TAGS}}": reveal_tags,
         "{{ABOUT_H1}}": about_h1,
         "{{ABOUT_BODY}}": about_body,
         "{{FOLDER_VIEWS}}": "\n".join(render_folder(s, data["pages"][s]) for s in FOLDERS),

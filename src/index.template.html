@@ -81,6 +81,29 @@ html:not(.js) .needs-js { display: none !important; }
 .hl-icon { display: inline-block; width: .74em; height: .74em; vertical-align: -.04em; margin: 0 .06em; color: var(--accent); }
 .hl-icon svg, .intro-icon svg { display: block; width: 100%; height: 100%; }
 
+/* Headline reveal: a dotted word that scatters tags around the title. */
+.hero { position: relative; align-self: stretch; }
+.reveal { appearance: none; margin: 0; padding: 0; border: 0; background: none; font: inherit; letter-spacing: inherit; color: inherit; cursor: pointer; border-radius: .1em; text-decoration: underline dotted; text-decoration-color: var(--accent); text-decoration-thickness: .055em; text-underline-offset: .14em; transition: color 120ms var(--ease); }
+.reveal:hover, .reveal[aria-expanded="true"] { color: var(--accent); }
+.reveal:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.reveal-tags { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; pointer-events: none; z-index: 2; }
+.reveal-tags li { position: absolute; left: 0; top: 0; display: inline-flex; align-items: center; gap: 8px; padding: 7px 15px 7px 12px; border-radius: 999px; border: 1px solid var(--tg-line); background: var(--tg-bg); color: var(--tg-fg); font: 500 15px/1.2 var(--sans); letter-spacing: 0; white-space: nowrap; box-shadow: 0 12px 26px -16px rgba(20, 18, 26, .38), 0 1px 2px rgba(20, 18, 26, .05); opacity: 0; visibility: hidden; transform: translate(var(--fx, 0), var(--fy, 0)) translate(-50%, -50%) scale(.4); transition: transform 380ms var(--ease) calc(var(--i) * 25ms), opacity 220ms var(--ease) calc(var(--i) * 25ms), visibility 0s linear 420ms; }
+.reveal-tags li::before { content: ""; flex: none; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: .7; }
+.hero.is-revealed .reveal-tags li { opacity: 1; visibility: visible; transform: translate(var(--x, 0), var(--y, 0)) translate(-50%, -50%) rotate(var(--r)) scale(1); transition: transform 560ms cubic-bezier(.18, 1.25, .4, 1) calc(var(--i) * 45ms), opacity 200ms var(--ease) calc(var(--i) * 45ms), visibility 0s; }
+.tg1 { --tg-bg: #FBE4EB; --tg-fg: #93314F; --tg-line: #F2CCD8; }
+.tg2 { --tg-bg: #E3EEFB; --tg-fg: #2C5A88; --tg-line: #CCDDF1; }
+.tg3 { --tg-bg: #FBEBD8; --tg-fg: #81501A; --tg-line: #F0D7B8; }
+.tg4 { --tg-bg: #E4F2E2; --tg-fg: #386338; --tg-line: #CBE4C8; }
+.tg5 { --tg-bg: #ECE6FA; --tg-fg: #56408F; --tg-line: #DAD0F2; }
+.tg6 { --tg-bg: #DFF2F1; --tg-fg: #23615D; --tg-line: #C4E5E2; }
+html[data-theme="dark"] .tg1 { --tg-bg: #3A2230; --tg-fg: #F2BCCD; --tg-line: #4E2E40; }
+html[data-theme="dark"] .tg2 { --tg-bg: #1E2C3C; --tg-fg: #ADCDEF; --tg-line: #2C3E53; }
+html[data-theme="dark"] .tg3 { --tg-bg: #382918; --tg-fg: #F0C894; --tg-line: #4C3823; }
+html[data-theme="dark"] .tg4 { --tg-bg: #1E3020; --tg-fg: #ADD9AC; --tg-line: #2C432D; }
+html[data-theme="dark"] .tg5 { --tg-bg: #29223F; --tg-fg: #C9BCF3; --tg-line: #3A3057; }
+html[data-theme="dark"] .tg6 { --tg-bg: #193230; --tg-fg: #A0DAD5; --tg-line: #254642; }
+html[data-theme="dark"] .reveal-tags li { box-shadow: 0 12px 26px -14px rgba(0, 0, 0, .7); }
+
 .dock-wrap { position: sticky; bottom: 0; z-index: 5; display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; padding-top: 8px; }
 .dock { display: flex; align-items: center; gap: 8px; padding: 8px; border: 1px solid var(--filet); border-radius: 22px; background: var(--dock); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: var(--dock-shadow); }
 .dock ul { display: flex; gap: 8px; list-style: none; margin: 0; padding: 0; }
@@ -162,6 +185,8 @@ img.tool-logo { border-radius: 3px; }
   .layer.is-opening, .layer.is-closing { animation: none; }
   .dk, .skip { transition: none; }
   .dk:hover { transform: none; }
+  .reveal-tags li, .hero.is-revealed .reveal-tags li { transform: translate(var(--x, 0), var(--y, 0)) translate(-50%, -50%) rotate(var(--r)); transition: opacity 150ms linear, visibility 0s linear 150ms; }
+  .hero.is-revealed .reveal-tags li { transition: opacity 150ms linear, visibility 0s; }
 }
 
 @media (max-width: 679px) {
@@ -170,6 +195,7 @@ img.tool-logo { border-radius: 3px; }
   .ava img { width: 110px; }
   .name { font-size: 18px; margin-top: 14px; }
   .hl { font-size: 38px; margin-top: 18px; }
+  .reveal-tags li { font-size: 14px; padding: 6px 13px 6px 11px; gap: 7px; }
   /* One row on every phone: the dock never stacks, items shrink instead. */
   .dock { align-items: flex-start; gap: 4px; max-width: 100%; padding: 8px 6px 6px; }
   .dock-sep { height: 40px; margin: 4px 0 0; }
@@ -225,6 +251,7 @@ img.tool-logo { border-radius: 3px; }
 <div class="ava"><img src="data:image/webp;base64,{{LOGO_B64}}" alt="WiP logo" data-fr-alt="Logo WiP"></div>
 <p class="name" aria-hidden="true">{{HOME_NAME}}</p>
 <h1 class="hl">{{HOME_HEADLINE}}</h1>
+{{HOME_REVEAL_TAGS}}
 </main>
 
 <div class="dock-wrap">
@@ -336,6 +363,7 @@ img.tool-logo { border-radius: 3px; }
     });
     applyThemeLabels();
     updateTitle();
+    if (typeof revealed !== 'undefined' && revealed) layoutReveal();
   }
   function lang() { return doc.getAttribute('data-lang') === 'fr' ? 'fr' : 'en'; }
 
@@ -380,6 +408,52 @@ img.tool-logo { border-radius: 3px; }
       src.start(t); src.stop(t + dur + 0.02);
     } catch (e) {}
   }
+
+  /* ---------- headline reveal ---------- */
+  var hero = document.getElementById('main');
+  var revealed = false, revealTouched = false;
+  function revealBtn() { return hero && hero.querySelector('.hl [data-l="' + lang() + '"] .reveal'); }
+  function layoutReveal() {
+    var list = document.getElementById('reveal-' + lang()), btn = revealBtn();
+    var h1 = hero && hero.querySelector('.hl');
+    if (!list || !btn || !h1) return;
+    var hr = hero.getBoundingClientRect(), tr = h1.getBoundingClientRect(), br = btn.getBoundingClientRect();
+    var items = list.querySelectorAll('li'), n = items.length, pad = 8;
+    var cx = tr.left - hr.left + tr.width / 2, cy = tr.top - hr.top + tr.height / 2;
+    var fx = br.left - hr.left + br.width / 2, fy = br.top - hr.top + br.height / 2;
+    var dock = document.getElementById('dock');
+    var floor = (dock ? dock.getBoundingClientRect().top : window.innerHeight) - hr.top - 26;
+    var side = Math.ceil(n / 2), widest = 0;
+    Array.prototype.forEach.call(items, function (li) { widest = Math.max(widest, li.offsetWidth); });
+    /* Wide screens: two columns beside the title. Narrow: rows under it, spilling above when the dock is close. */
+    var wide = hr.width >= tr.width + 2 * (widest + 70);
+    var below = Math.max(0, Math.floor((floor - (tr.bottom - hr.top) - 18) / 46));
+    var STAG = [0, 34, -18, 26, -10];
+    Array.prototype.forEach.call(items, function (li, i) {
+      var w = li.offsetWidth, x, y;
+      if (wide) {
+        var dir = i % 2 ? 1 : -1, row = Math.floor(i / 2);
+        x = cx + dir * (tr.width / 2 + 48 + w / 2 + STAG[row % STAG.length]);
+        y = cy + (row - (side - 1) / 2) * 62;
+      } else {
+        var col = i % 2, line = Math.floor(i / 2);
+        x = cx + (col ? 1 : -1) * Math.min(hr.width / 4, 110) + (line % 2 ? 14 : -14);
+        y = line < below ? tr.bottom - hr.top + 34 + line * 46 : tr.top - hr.top - 30 - (line - below) * 46;
+      }
+      x = Math.max(pad + w / 2, Math.min(hr.width - pad - w / 2, x));
+      li.style.setProperty('--x', Math.round(x) + 'px'); li.style.setProperty('--y', Math.round(y) + 'px');
+      li.style.setProperty('--fx', Math.round(fx) + 'px'); li.style.setProperty('--fy', Math.round(fy) + 'px');
+    });
+  }
+  function setReveal(on, quiet) {
+    if (!hero || on === revealed) return;
+    revealed = on;
+    if (on) { layoutReveal(); void hero.offsetWidth; }
+    hero.classList.toggle('is-revealed', on);
+    Array.prototype.forEach.call(hero.querySelectorAll('.reveal'), function (b) { b.setAttribute('aria-expanded', on ? 'true' : 'false'); });
+    if (!quiet) play(on ? 'open' : 'close');
+  }
+  window.addEventListener('resize', function () { if (revealed) layoutReveal(); });
 
   /* ---------- pages ---------- */
   var lastTrigger = null;
@@ -458,9 +532,12 @@ img.tool-logo { border-radius: 3px; }
       return;
     }
     var act = e.target.closest && e.target.closest('[data-action]');
+    if (revealed && !(act && act.getAttribute('data-action') === 'reveal')) setReveal(false);
     if (!act) return;
     var a = act.getAttribute('data-action');
-    if (a === 'theme') {
+    if (a === 'reveal') {
+      revealTouched = true; setReveal(!revealed);
+    } else if (a === 'theme') {
       var next = doc.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       doc.setAttribute('data-theme', next); store.set('wip-theme', next); applyThemeLabels();
     } else if (a === 'sound') {
@@ -470,6 +547,7 @@ img.tool-logo { border-radius: 3px; }
     }
   });
   document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && revealed) { setReveal(false); var b = revealBtn(); if (b) b.focus(); return; }
     if (e.key === 'Escape' && doc.getAttribute('data-page') !== 'home') close(true);
   });
   window.addEventListener('popstate', function () {
@@ -481,6 +559,16 @@ img.tool-logo { border-radius: 3px; }
   try { history.replaceState({ page: doc.getAttribute('data-page') }, ''); } catch (e) {}
   applySound();
   applyLang(lang());
+  /* One hint per visit: the tags show once, then fold back behind the word. */
+  if (hero && !reduceMotion && doc.getAttribute('data-page') === 'home') {
+    var hinted = null;
+    try { hinted = window.sessionStorage.getItem('wip-reveal-hint'); } catch (e) {}
+    if (!hinted) {
+      try { window.sessionStorage.setItem('wip-reveal-hint', '1'); } catch (e) {}
+      window.setTimeout(function () { if (!revealTouched) setReveal(true, true); }, 900);
+      window.setTimeout(function () { if (!revealTouched) setReveal(false, true); }, 3600);
+    }
+  }
 })();
 </script>
 </body>
