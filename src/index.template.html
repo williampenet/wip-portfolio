@@ -425,24 +425,50 @@ img.tool-logo { border-radius: 3px; }
     var floor = (dock ? dock.getBoundingClientRect().top : window.innerHeight) - hr.top - 26;
     var side = Math.ceil(n / 2), widest = 0;
     Array.prototype.forEach.call(items, function (li) { widest = Math.max(widest, li.offsetWidth); });
-    /* Wide screens: two columns beside the title. Narrow: rows under it, spilling above when the dock is close. */
+    /* Wide screens: two columns beside the title, read left to right, top to bottom. */
     var wide = hr.width >= tr.width + 2 * (widest + 70);
-    var below = Math.max(0, Math.floor((floor - (tr.bottom - hr.top) - 18) / 46));
     var STAG = [0, 34, -18, 26, -10];
-    Array.prototype.forEach.call(items, function (li, i) {
-      var w = li.offsetWidth, x, y;
-      if (wide) {
-        var dir = i % 2 ? 1 : -1, row = Math.floor(i / 2);
-        x = cx + dir * (tr.width / 2 + 48 + w / 2 + STAG[row % STAG.length]);
-        y = cy + (row - (side - 1) / 2) * 62;
-      } else {
-        var col = i % 2, line = Math.floor(i / 2);
-        x = cx + (col ? 1 : -1) * Math.min(hr.width / 4, 110) + (line % 2 ? 14 : -14);
-        y = line < below ? tr.bottom - hr.top + 34 + line * 46 : tr.top - hr.top - 30 - (line - below) * 46;
-      }
+    var place = function (li, x, y) {
+      var w = li.offsetWidth;
       x = Math.max(pad + w / 2, Math.min(hr.width - pad - w / 2, x));
       li.style.setProperty('--x', Math.round(x) + 'px'); li.style.setProperty('--y', Math.round(y) + 'px');
       li.style.setProperty('--fx', Math.round(fx) + 'px'); li.style.setProperty('--fy', Math.round(fy) + 'px');
+    };
+    if (wide) {
+      Array.prototype.forEach.call(items, function (li, i) {
+        var dir = i % 2 ? 1 : -1, row = Math.floor(i / 2);
+        place(li, cx + dir * (tr.width / 2 + 48 + li.offsetWidth / 2 + STAG[row % STAG.length]), cy + (row - (side - 1) / 2) * 62);
+      });
+      return;
+    }
+    /* Narrow screens: balanced rows that keep the reading order. Rows go under the title;
+       when the dock leaves too little room, the first rows go above the name instead (over the logo, never over text). */
+    var gap = 12, maxW = hr.width - 2 * pad, arr = Array.prototype.slice.call(items);
+    var wOf = function (li) { return li.offsetWidth + 8; };
+    var greedy = [], cur = [], curW = 0;
+    arr.forEach(function (li) {
+      var w = wOf(li);
+      if (cur.length && curW + gap + w > maxW) { greedy.push(cur); cur = []; curW = 0; }
+      curW += (cur.length ? gap : 0) + w; cur.push(li);
+    });
+    if (cur.length) greedy.push(cur);
+    var per = Math.ceil(n / greedy.length), rows = [];
+    for (var k = 0; k < n; k += per) rows.push(arr.slice(k, k + per));
+    var fits = rows.every(function (r) { return r.reduce(function (t, li) { return t + wOf(li); }, 0) + gap * (r.length - 1) <= maxW; });
+    if (!fits) rows = greedy;
+    var ROW = 44, nameEl = hero.querySelector('.name');
+    var nameTop = nameEl ? nameEl.getBoundingClientRect().top - hr.top : tr.top - hr.top;
+    var roomBelow = Math.max(0, Math.floor((floor - (tr.bottom - hr.top) - 12) / ROW));
+    var above = Math.max(0, rows.length - roomBelow);
+    rows.forEach(function (r, ri) {
+      var y = ri < above ? nameTop - 26 - (above - 1 - ri) * ROW : tr.bottom - hr.top + 30 + (ri - above) * ROW;
+      var total = r.reduce(function (t, li) { return t + wOf(li); }, 0) + gap * (r.length - 1);
+      var x = cx - total / 2 + (ri % 2 ? 10 : -10);
+      r.forEach(function (li, j) {
+        var w = wOf(li);
+        place(li, x + w / 2, y + (j % 2 ? 5 : -3));
+        x += w + gap;
+      });
     });
   }
   function setReveal(on, quiet) {
