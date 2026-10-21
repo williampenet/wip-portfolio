@@ -37,12 +37,12 @@ description.fr: William Pénet, Senior Product Builder en freelance. Dix ans de 
 name: William Pénet
 // Un | dans le titre marque un retour à la ligne (facultatif).
 // {reveal} place le mot cliquable (clé reveal) ; au clic, les étiquettes de la clé tags (séparées par |) s'affichent autour du titre.
-headline.en: I build {reveal}, | with or without AI.
-headline.fr: Je construis des {reveal}, | avec ou sans IA.
+headline.en: I build {reveal}, | with and without AI.
+headline.fr: Je construis des {reveal}, | avec et sans IA.
 reveal.en: things
 reveal.fr: choses
-tags.en: products | apps | stories | games | nights out | listening sessions
-tags.fr: produits | apps | récits | jeux | soirées | sessions d’écoute
+tags.en: products | stories | events | games
+tags.fr: produits | récits | événements | jeux
 
 
 # About
