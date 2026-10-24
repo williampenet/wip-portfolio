@@ -383,9 +383,12 @@ def render(data):
 
     titles = one(home, "title") or {"en": f"{name} — Senior Product Manager", "fr": f"{name} — Product Manager senior"}
     desc = one(home, "description") or {"en": "", "fr": ""}
+    site_url = raw(home, "url")
+    if not site_url or not site_url.startswith("https://") or not site_url.endswith("/"):
+        raise ContentError("content.md: Home needs 'url: https://.../' (absolute, ending with /): link previews need it")
 
     replacements = {
-        "{{DESCRIPTION}}": htmlmod.escape(desc["en"], quote=True),
+        "{{SITE_URL}}": htmlmod.escape(site_url, quote=True),
         "{{HOME_NAME}}": htmlmod.escape(name),
         "{{HOME_HEADLINE}}": headline,
         "{{HOME_REVEAL_TAGS}}": reveal_tags,
@@ -401,7 +404,44 @@ def render(data):
     page_titles = {"home": titles["en"], "about": f'{a_title["en"]} — {name}'}
     for s in FOLDERS:
         page_titles[s] = f'{one(data["pages"][s]["fields"], "title")["en"]} — {name}'
-    return replacements, page_titles
+
+    # Search results and link previews (LinkedIn, WhatsApp, Slack, X...): one description per page.
+    # English is the default language of the page, so the English text is used.
+    descriptions = {"home": desc["en"], "about": (one(about, "description") or desc)["en"]}
+    for s in FOLDERS:
+        descriptions[s] = (one(data["pages"][s]["fields"], "description") or desc)["en"]
+    for page, d in descriptions.items():
+        if not d:
+            raise ContentError(f"content.md: page '{page}' has no description")
+        if len(d) > 160:
+            print(f"  (description of '{page}' is {len(d)} characters: search results may cut it)")
+    meta = {page: {"title": page_titles[page], "description": descriptions[page],
+                   "url": site_url if page == "home" else f"{site_url}{page}/"}
+            for page in page_titles}
+    return replacements, meta, site_url, name
+
+
+def json_ld(site_url, name, title, description):
+    """Structured data for the home page (schema.org Person + WebSite)."""
+    data = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {"@type": "WebSite", "@id": f"{site_url}#website", "url": site_url, "name": name,
+             "inLanguage": ["en", "fr"], "about": {"@id": f"{site_url}#person"}},
+            {"@type": "Person", "@id": f"{site_url}#person", "name": name, "url": site_url,
+             "jobTitle": title.split("—", 1)[-1].strip(), "description": description,
+             "image": f"{site_url}assets/share/icon-512.png",
+             "sameAs": ["https://www.linkedin.com/in/williampenet/", "https://github.com/williampenet"]},
+        ],
+    }
+    body = json.dumps(data, ensure_ascii=False, indent=1).replace("</", "<\\/")
+    return f'\n<script type="application/ld+json">\n{body}\n</script>'
+
+
+def sitemap(meta):
+    urls = "\n".join(f"  <url><loc>{htmlmod.escape(m['url'])}</loc></url>" for m in meta.values())
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "\n</urlset>\n")
 
 
 def company_logo(match):
@@ -419,7 +459,7 @@ def company_logo(match):
 
 def main():
     content = parse(CONTENT)
-    replacements, page_titles = render(content)
+    replacements, meta, site_url, name = render(content)
 
     html = TEMPLATE.read_text(encoding="utf-8")
     for token, value in replacements.items():
@@ -428,12 +468,15 @@ def main():
         html = html.replace(token, base64.b64encode((ROOT / rel).read_bytes()).decode("ascii"))
     html = re.sub(r"\{\{CO:([a-z0-9-]+):([^}]+)\}\}", company_logo, html)
 
-    for page, title in page_titles.items():
+    for page, m in meta.items():
         is_home = page == "home"
         out = (
             html.replace("{{PAGE}}", page)
             .replace("{{ROOT}}", "./" if is_home else "../")
-            .replace("{{TITLE}}", htmlmod.escape(title))
+            .replace("{{TITLE}}", htmlmod.escape(m["title"], quote=True))
+            .replace("{{DESCRIPTION}}", htmlmod.escape(m["description"], quote=True))
+            .replace("{{URL}}", htmlmod.escape(m["url"], quote=True))
+            .replace("{{JSON_LD}}", json_ld(site_url, name, m["title"], m["description"]) if is_home else "")
             .replace("{{HOME_HIDDEN}}", "" if is_home else ' inert aria-hidden="true"')
             .replace("{{SKIP_TARGET}}", "dock" if is_home else f"page-title-{page}")
         )
@@ -444,6 +487,8 @@ def main():
         target.parent.mkdir(exist_ok=True)
         target.write_text(out, encoding="utf-8")
         print(f"wrote {target.relative_to(ROOT)} ({target.stat().st_size / 1024:.0f} KB)")
+    (ROOT / "sitemap.xml").write_text(sitemap(meta), encoding="utf-8")
+    print("wrote sitemap.xml")
 
 
 if __name__ == "__main__":

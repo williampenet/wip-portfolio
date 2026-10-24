@@ -32,8 +32,10 @@ Icônes disponibles pour `icon:` : scan-text, briefcase, moon, heart-handshake, 
 # Home
 title.en: William Pénet — Senior Product Builder
 title.fr: William Pénet — Senior Product Builder freelance
-description.en: William Pénet, Senior Product Builder in freelance. Ten years of product, AI shipped in production, side projects live.
-description.fr: William Pénet, Senior Product Builder en freelance. Dix ans de produit, l’IA livrée en production, des projets personnels en ligne.
+description.en: Freelance Senior Product Builder. Ten years of product in e-commerce, data and video streaming. I also build my own tools with AI: live, code on GitHub.
+description.fr: Senior Product Builder freelance. Dix ans de produit dans le e-commerce, la data et le streaming vidéo. Je construis aussi mes propres outils avec l’IA : en ligne, code sur GitHub.
+// Adresse publique du site : sert aux liens de partage (LinkedIn, WhatsApp…) et à Google.
+url: https://williampenet.github.io/wip-portfolio/
 name: William Pénet
 // Un | dans le titre marque un retour à la ligne (facultatif).
 // {reveal} place le mot cliquable (clé reveal) ; au clic, les étiquettes de la clé tags (séparées par |) s'affichent autour du titre.
@@ -48,6 +50,8 @@ tags.fr: produits | récits | événements | jeux
 # About
 title.en: About
 title.fr: À propos
+description.en: William Pénet, Senior Product Builder: ten years of product, from startup to Stellantis-scale e-commerce, data at Interflora, video streaming at Bedrock.
+description.fr: William Pénet, Senior Product Builder : dix ans de produit, de la startup au e-commerce à l’échelle de Stellantis, la data chez Interflora, le streaming vidéo chez Bedrock.
 text.en: Hi.
 text.fr: Bonjour.
 text.en: I’m a Senior Product Builder. Ten years of product, one mission at a time: a startup (1D Lab), a digital transformation consultancy (Rocket Labs), e-commerce at Stellantis scale ([Mister Auto](https://www.mister-auto.com)), B2B SaaS (Systhen), e-commerce for a European group, on the data side ([Interflora](https://www.interflora.fr)), and now video streaming ([Bedrock](https://www.bedrockstreaming.com)).
@@ -66,6 +70,8 @@ text.fr: On en parle ?
 
 # Page: stuff-i-built
 title: Stuff I built
+description.en: Tools William Pénet built on his own time: Nightcrawler, a concert recommender scored by a Mistral model, and SpotiBoard, a Spotify listening dashboard.
+description.fr: Les outils construits par William Pénet sur son temps libre : Nightcrawler, recommandation de concerts notés par un modèle Mistral, et SpotiBoard, tableau de bord d’écoute Spotify.
 icon: hammer
 intro.en: Tools I built on my own time {icon}, because I wanted them to exist.
 intro.fr: Des outils construits sur mon temps libre {icon}, parce que je voulais qu’ils existent.
@@ -114,6 +120,8 @@ text.fr: {logo:impeccable|**[Impeccable](https://github.com/pbakaus/impeccable)*
 
 # Page: career
 title: Career
+description.en: William Pénet’s career: ten years of product at Bedrock Streaming, Interflora, Systhen, Mister Auto × Stellantis, Rocket Labs and 1D Lab.
+description.fr: Le parcours de William Pénet : dix ans de produit chez Bedrock Streaming, Interflora, Systhen, Mister Auto × Stellantis, Rocket Labs et 1D Lab.
 icon: briefcase
 intro.en: Over ten years in product {icon}, now focused on data and CRM integration: making customer data flow between systems, both ways and in real time. Most recent first.
 intro.fr: Plus de dix ans de produit {icon}, aujourd’hui centrés sur la data et l’intégration CRM : faire circuler les données clients entre les systèmes, dans les deux sens et en temps réel. Du plus récent au plus ancien.
@@ -201,6 +209,8 @@ text.fr: Une startup qui entendait bouleverser la rémunération des artistes in
 
 # Page: b-sides
 title: B-Sides
+description.en: William Pénet’s side projects: MEWI, volunteering with Data for Good and Time for the Planet, and music.
+description.fr: Les projets annexes de William Pénet : MEWI, le bénévolat chez Data for Good et Time for the Planet, et la musique.
 icon: moon
 intro.en: WiP applies to my own time too {icon}! Here’s a glimpse of the B-Sides projects I’m working on, or have worked on.
 intro.fr: WiP s’applique aussi à mon temps libre {icon} ! Voici un aperçu des projets B-Sides sur lesquels je travaille, ou j’ai travaillé.

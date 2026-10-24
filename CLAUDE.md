@@ -17,6 +17,11 @@ Read before any change:
   `index.html` and `<slug>/index.html` (about, stuff-i-built, career, b-sides).
 - Never edit a generated `index.html` by hand: edit the sources, run the build, commit both.
 - CI (`.github/workflows/build.yml`) fails if the committed pages differ from a fresh build.
+- Search and link-preview metadata (title, description, Open Graph, X card, canonical, JSON-LD,
+  `sitemap.xml`) come from `content.md` (`title`, `description`, Home `url`) through `build.py`.
+  The share image and icons in `assets/share/` are made by `scripts/make_share_images.py`
+  (needs Pillow + fontTools; rerun it when the name or role changes, then commit the PNGs).
+  After a change, refresh LinkedIn's cached preview with https://www.linkedin.com/post-inspector/.
 - `assets/logos-src/` holds original logo files; only processed copies in `assets/logos`,
   `assets/companies` and `assets/dock` are used by the build.
 
