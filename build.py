@@ -27,6 +27,7 @@ ASSETS = {
     "{{DK_BUILT_B64}}": "assets/dock/stuff-i-built.png",
     "{{DK_FREELANCE_B64}}": "assets/dock/freelance.png",
     "{{DK_BSIDES_B64}}": "assets/dock/b-sides.png",
+    "{{DK_CV_B64}}": "assets/dock/cv.png",
     "{{DK_GITHUB_B64}}": "assets/dock/github.png",
 }
 

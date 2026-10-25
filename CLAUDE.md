@@ -42,7 +42,7 @@ Read before any change:
 - Preview = private claude.ai artifact https://claude.ai/artifact/XTgW9uK9Gixs3S9WAX5LUu
   (`index.html` as the page, each `<slug>/index.html` as a file). After a change to `main`,
   republish it to the same URL (Artifact tool, `url` = that link) so William sees it on any device.
-- Known gap: `william-penet-cv.pdf` is linked from the pages but is not in the project.
+- CV: a Google Doc shared by William (link in the dock and in About, `src/index.template.html`).
 
 ## Rules
 - Repo and docs in English; conversation with William in French.
